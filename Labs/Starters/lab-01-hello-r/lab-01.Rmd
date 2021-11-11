@@ -1,7 +1,7 @@
 ---
 title: "Lab 01 - Hello R"
-author: "Insert your name here"
-date: "Insert date here"
+author: "Tyler George"
+date: "11/11/2021"
 output: github_document
 ---
 
@@ -10,7 +10,30 @@ output: github_document
 ```{r load-packages, message=FALSE}
 library(tidyverse) 
 library(datasauRus)
+library(usethis)
 ```
+
+## Connecting RStudio and Github Code:
+### Step 1
+```{r }
+usethis::create_github_token()
+```
+
+### Step 6
+
+GITHUB_PAT=
+
+### Step 7
+```{r eval = FALSE}
+gitcreds::gitcreds_set() #Tells R to save your PAT to your RStudio user
+```
+
+### Step 8
+```{r eval=FALSE}
+usethis::edit_r_environ()
+```
+
+
 
 ## Exercises
 

@@ -35,42 +35,71 @@ You need to accept the invitation before moving on to the next step.
 
 To connect your RStudio and GitHub accounts by following the steps below:
 
--   Click on your name on the top right corner to open the right menu.
--   Then, click on Authentication.
+### Step 1
+Run the following chunk in your lab RMarkdown. If you have popup blockers you may need to disable them. This will bring you to github and look like the image below. 
 
-```{r github-auth-1, echo = FALSE}
-knitr::include_graphics("img/github-auth-1.png")
+```{r eval=FALSE}
+usethis::create_github_token()
 ```
 
--   In the Authentication window, check the box for *Enabled*.
-
-```{r github-auth-2, echo = FALSE}
-knitr::include_graphics("img/github-auth-2.png")
+```{r github-conn-1, echo = FALSE}
+knitr::include_graphics("img/github-conn-1.PNG")
 ```
 
--   In the next window, click on the green box that says "Authorize rstudio".
+### Step 2
+Sign into your GitHub account. 
 
-```{r github-auth-3, echo = FALSE}
-knitr::include_graphics("img/github-auth-3.png")
+### Step 3
+Next you need to change the note box circled in the following image. This should be named something having to do with this class but has to be unique. For example \"DSC223-FB4-MyName.\" You are having Github create you a super secret secure password (essentialyl).It is called a Personal Access Token (PAT). 
+
+```{r github-conn-2, echo = FALSE}
+knitr::include_graphics("img/github-conn-2.PNG")
 ```
 
--   Back in the Authentication window, check the box for *Private repo access also enabled*, and once again, on the green box that says "Authorize rstudio" in the next window. At this point you should also make sure that the course organization shows up for you under *Organization access*. If it does not, this means you have not yet accepted the GitHub invitation to join the course, and you should go back and do that.
+### Step 4
+Next scroll all the way to the bottom and click generated as show in the image:
 
-```{r github-auth-4, echo = FALSE}
-knitr::include_graphics("img/github-auth-4.png")
+```{r github-conn-3, echo = FALSE}
+knitr::include_graphics("img/github-conn-3.PNG")
 ```
 
--   Once you're done, both of these boxes should be checked.
+### Step 5
+We need this new code, click the copy button as shown in the next image. This puts the code on your clipboard to be pasted. Afterword comeback to this window. 
 
-```{r github-auth-5, echo = FALSE}
-knitr::include_graphics("img/github-auth-5.png")
+```{r github-conn-4, echo = FALSE}
+knitr::include_graphics("img/github-conn-4.PNG")
 ```
 
--   To confirm that you've successfully linked up your GitHub and RStudio Cloud accounts, [GitHub settings \> Applications](https://github.com/settings/applications). You should see RStudio listed as an authorized app under *Authorized OAuth Apps*. If you don't this is a good time to ask a question.
+### Step 6
+Paste that code in your lab RMarkdown under step 6. 
+
+### Step 7
+Now, run the following chunk in your lab. Look at the console, paste in your PAT for the password. See the image for an example:
+```{r eval = FALSE}
+gitcreds::gitcreds_set() #Tells R to save your PAT to your RStudio user
+```
+
+```{r github-conn-5, echo = FALSE}
+knitr::include_graphics("img/github-conn-5.PNG")
+```
+
+Now technically, we could be done but we don't want to have to repeat this every time we use RStudio. Thus next we are going to tell it to store your password. 
+
+### Step 8
+Now, copy the line from step 6 (with the GITHUB_PAT stuff). Run the step 8 chunk in your lab and paste in the new file that opens. Then click save (little floppy disk symbol at the top). See the image below. 
+
+```{r eval=FALSE}
+usethis::edit_r_environ()
+```
 
 ```{r github-auth-6, echo = FALSE}
-knitr::include_graphics("img/github-auth-6.png")
+knitr::include_graphics("img/github-conn-6.PNG")
 ```
+
+### Step 9
+Click save (little floppy disk symbol at the top). See the image above. 
+
+Yay you did it!
 
 # Getting started
 
@@ -91,7 +120,7 @@ knitr::include_graphics("img/clone-repo-link.png")
 knitr::include_graphics("img/new-project-from-gh.png")
 ```
 
--   Go to RStudio Cloud and into the course workspace. Create a **New Project from Git Repo**. You will need to click on the down arrow next to the **New Project** button to see this option.
+-   Go to RStudio Server and into the course workspace. Create a **New Project from Git Repo**. You will need to click on the down arrow next to the **New Project** button to see this option.
 
 ```{r paste-gh-repo-url, fig.margin = TRUE, echo = FALSE, fig.width=5}
 knitr::include_graphics("img/paste-gh-repo-url.png")
