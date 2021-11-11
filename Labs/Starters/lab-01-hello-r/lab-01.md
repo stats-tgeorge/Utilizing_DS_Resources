@@ -1,13 +1,43 @@
 Lab 01 - Hello R
 ================
-Insert your name here
-Insert date here
+Tyler George
+11/11/2021
 
 ## Load packages and data
 
 ``` r
 library(tidyverse) 
 library(datasauRus)
+library(usethis)
+```
+
+## Connecting RStudio and Github Code:
+
+### Step 1
+
+``` r
+usethis::create_github_token()
+```
+
+    ## • Call `gitcreds::gitcreds_set()` to register this token in the local Git credential store
+    ##   It is also a great idea to store this token in any password-management software that you use
+
+    ## • Open URL 'https://github.com/settings/tokens/new?scopes=repo,user,gist,workflow&description=DESCRIBE THE TOKEN\'S USE CASE'
+
+### Step 6
+
+GITHUB_PAT=
+
+### Step 7
+
+``` r
+gitcreds::gitcreds_set() #Tells R to save your PAT to your RStudio user
+```
+
+### Step 8
+
+``` r
+usethis::edit_r_environ()
 ```
 
 ## Exercises
@@ -41,7 +71,7 @@ dino_data %>%
   summarize(r = cor(x, y))
 ```
 
-    ## # A tibble: 1 x 1
+    ## # A tibble: 1 × 1
     ##         r
     ##     <dbl>
     ## 1 -0.0645
