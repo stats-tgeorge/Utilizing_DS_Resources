@@ -29,11 +29,6 @@ The goal of this assignment is to introduce you to R, RStudio, Git, and GitHub, 
 
 # Getting started
 
-## Prerequisites {data-link="Prerequisites"}
-
-This assignment assumes that you have reviewed the lectures titled "Meet the toolkit: Programming" and "Meet the toolkit: version control and collaboration".
-If you haven't yet done so, please pause and complete the following before continuing.
-
 ## Terminology
 
 We've already thrown around a few new terms, so let's define them before we proceed.
@@ -52,13 +47,13 @@ We've already thrown around a few new terms, so let's define them before we proc
 
     -   In this course, each assignment you work on will be contained in a Git repo.
     -   For individual assignments, only you will have access to the repo. For team assignments, all team members will have access to a single repo where they work collaboratively.
-    -   All repos associated with this course are housed in the course GitHub organization. The organization is set up such that students can only see repos they have access to, but the course staff can see all of them.
+    -   All repos associated with this course are housed in the course GitHub organization. The organization is set up such that students can only see repos they have access to, but the course staff (just Professor George) can see all of them.
 
 ## Starting slow
 
 As the course progresses, you are encouraged to explore beyond what the assignments dictate; a willingness to experiment will make you a much better programmer!
 Before we get to that stage, however, you need to build some basic fluency in R.
-First, we will explore the fundamental building blocks of all of these tools.
+First, we will explore the fundamental building blocks of all of these tools. We did some of this in class together - part this assingment is making sure you can do this on your own. 
 
 Before you can get started with the analysis, you need to make sure you:
 
@@ -66,10 +61,8 @@ Before you can get started with the analysis, you need to make sure you:
 
 -   are a member of the course GitHub organization
 
--   are a member of the course RStudio Cloud space
+-   you can log into RStudio Server
 
-If you failed to confirm any of these, it means you have not yet completed the prerequisites for this assignment.
-Please go back to [Prerequisites] and complete them before continuing the assignment.
 
 # Workflow
 
@@ -83,7 +76,7 @@ This action is called **cloning**.
 
 Then you will work in RStudio on the data analysis, making **commits** along the way (snapshots of your changes) and finally **push** all your work back to GitHub.
 
-The next few steps will walk you through the process of getting information of the repo to be cloned, cloning your repo in a new RStudio Cloud project, and getting started with the analysis.
+The next few steps will walk you through the process of getting information of the repo to be cloned, cloning your repo in a new RStudio Server project, and getting started with the analysis.
 
 ### Step 1. Get URL of repo to be cloned
 
@@ -94,29 +87,28 @@ knitr::include_graphics("img/clone-repo-link.png")
 On GitHub, click on the green **Code** button, select **HTTPS** (this might already be selected by default, and if it is, you'll see the text *Use Git or checkout with SVN using the web URL* jas in the image on the right).
 Click on the clipboard icon 📋 to copy the repo URL.
 
-### Step 2. Go to RStudio Cloud
+### Step 2. Go to RStudio Server
 
-Go to [rstudio.cloud](https://rstudio.cloud/ "RStudio Cloud") and then **navigate to the course workspace** via the left sidebar.
-It's very important that you do this for two reasons:
+Go to [rstudio.server](http://turing:8787/).
 
--   It's only when you're in the course workspace that you'll be able to benefit from R packages I've pre-installed for you so that your project can be configured correctly.
--   It's only when you're in the course workspace that your usage of RStudio Cloud won't count towards the free usage limits.
-
-```{r course-workspace, fig.margin = TRUE, echo = FALSE, eval = TRUE}
-knitr::include_graphics("img/course-workspace.png")
-```
-
-Before you proceed, confirm that you are in the course workspace by checking out what's on your top bar in RStudio Cloud.
 
 ### Step 3. Clone the repo
 
-In RStudio, click on the **down arrow** next to New Project and then choose **New Project from Git Repository**.
+In RStudio, click on **File** then choose **New Project**. Click **Version control** and then **Git**.
+
+```{r new-project-from-git, echo = FALSE, eval = TRUE, fig.show = "hold", out.width = "30%"}
+knitr::include_graphics("img/new-project-from-gh_mod.png")
+knitr::include_graphics("img/new-project-from-gh_mod2.png")
+knitr::include_graphics("img/new-project-from-gh_mod3.png")
+```
 
 In the pop-up window, **paste the URL** you copied from GitHub, make sure the box for **Add packages from the base project** is checked (it should be, by default) and then click **OK**.
 
-```{r new-project-from-git, echo = FALSE, eval = TRUE, fig.align = "left"}
-knitr::include_graphics("img/new-project-from-git.png")
+```{r new-project-from-git4, echo = FALSE, eval = TRUE, fig.align = "left", out.width = "75%"}
+knitr::include_graphics("img/new-project-from-git_mod.png")
 ```
+
+
 
 # Hello RStudio!
 
