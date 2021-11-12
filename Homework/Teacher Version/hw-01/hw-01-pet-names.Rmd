@@ -53,7 +53,7 @@ We've already thrown around a few new terms, so let's define them before we proc
 
 As the course progresses, you are encouraged to explore beyond what the assignments dictate; a willingness to experiment will make you a much better programmer!
 Before we get to that stage, however, you need to build some basic fluency in R.
-First, we will explore the fundamental building blocks of all of these tools. We did some of this in class together - part this assingment is making sure you can do this on your own. 
+First, we will explore the fundamental building blocks of all of these tools. We did some of this in class together - part this assignment is making sure you can do this on your own. 
 
 Before you can get started with the analysis, you need to make sure you:
 
@@ -104,7 +104,7 @@ knitr::include_graphics("img/new-project-from-gh_mod3.png")
 
 In the pop-up window, **paste the URL** you copied from GitHub, make sure the box for **Add packages from the base project** is checked (it should be, by default) and then click **OK**.
 
-```{r new-project-from-git4, echo = FALSE, eval = TRUE, fig.align = "left", out.width = "75%"}
+```{r new-project-from-git4, echo = FALSE, eval = TRUE, fig.align = "left", out.width = "50%"}
 knitr::include_graphics("img/new-project-from-git_mod.png")
 ```
 
@@ -164,7 +164,7 @@ Now that you have made an update and committed this change, it's time to push th
 Or more specifically, to your repo on GitHub.
 Why?
 So that others can see your changes.
-And by others, we mean the course teaching team (your repos in this course are private to you and us, only).
+And by others, we mean your Professor, Tyler (your repos in this course are private to you and me, only).
 In order to push your changes to GitHub, click on **Push**.
 
 ```{r ready-to-push, fig.margin = TRUE, echo = FALSE, eval = TRUE}
