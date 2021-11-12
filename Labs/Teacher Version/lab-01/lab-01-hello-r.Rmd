@@ -85,7 +85,7 @@ knitr::include_graphics("img/github-conn-5.PNG")
 
 
 ### Step 8
-Click save (little floppy disk symbol at the top). See the image above. 
+Click save (little floppy disk symbol at the top). See the image above. Note that you will need your PAT frequently. 
 
 Yay! You did it!
 
@@ -107,7 +107,7 @@ knitr::include_graphics("img/clone-repo-link.png")
 ```{r new-project-from-gh1, fig.margin = TRUE, echo = FALSE, fig.width=3}
 knitr::include_graphics("img/new-project-from-gh_mod.png")
 ```
--   Go to RStudio Server and into the course workspace. Create a **New Project**. You will need to click **File** and then **New Project**
+-   Go to RStudio Server. Create a **New Project**. You will need to click **File** and then **New Project**
 ```{r new-project-from-gh2, fig.margin = TRUE, echo = FALSE, fig.width=3}
 knitr::include_graphics("img/new-project-from-gh_mod2.png")
 ```
