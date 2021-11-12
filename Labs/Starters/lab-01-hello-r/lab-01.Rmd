@@ -27,13 +27,6 @@ GITHUB_PAT=
 gitcreds::gitcreds_set() #Tells R to save your PAT to your RStudio user
 ```
 
-### Step 8
-```{r eval=FALSE}
-usethis::edit_r_environ()
-```
-
-
-
 ## Exercises
 
 ### Exercise 1
