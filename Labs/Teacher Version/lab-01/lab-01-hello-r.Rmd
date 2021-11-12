@@ -28,6 +28,20 @@ And to make versioning simpler, this is a solo lab.
 Additionally, we want to make sure everyone gets a significant amount of time at the steering wheel.
 In future labs you'll learn about collaborating on GitHub and produce a single lab report for your team.
 
+
+
+# Changing your RServer Password
+In the bottom left corner of RStudio, you should see "Terminal" tab. Click that and run the line
+```{r eval=FALSE}
+passwd
+```
+Now you should be prompted to put in your current password. The default is **abc123**.
+
+Next you will need to enter your new password once, click enter, and enter it again. That is your new password for logging into RStudio Server. 
+
+Now, click back in the lower left corner of RStudio, click "Console" and continue the lab. 
+
+
 # Connecting GitHub and RStudio Cloud
 
 You should have already received an invitation to join the GitHub organization for this course.

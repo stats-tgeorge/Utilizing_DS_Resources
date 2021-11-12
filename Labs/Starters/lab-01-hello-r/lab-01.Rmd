@@ -13,6 +13,11 @@ library(datasauRus)
 library(usethis)
 ```
 
+## Changing your RStudio Server Password
+1) Use command (in Terminal): passwd
+2) Enter current password (abc123)
+3) Enter new password, enter new password. 
+
 ## Connecting RStudio and Github Code:
 ### Step 1
 ```{r }
