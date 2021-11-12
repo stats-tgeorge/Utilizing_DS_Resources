@@ -2,7 +2,7 @@
 title: "Lab 01 - Hello R"
 author: "Tyler George"
 date: "11/11/2021"
-output: github_document
+output: html_document
 ---
 
 ## Load packages and data
@@ -20,7 +20,6 @@ usethis::create_github_token()
 ```
 
 ### Step 6
-
 GITHUB_PAT=
 
 ### Step 7
