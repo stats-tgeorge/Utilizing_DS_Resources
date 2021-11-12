@@ -83,8 +83,20 @@ gitcreds::gitcreds_set() #Tells R to save your PAT to your RStudio user
 knitr::include_graphics("img/github-conn-5.PNG")
 ```
 
+Now technically, we could be done but we don't want to have to repeat this every time we use RStudio. Thus next we are going to tell it to store your password. 
 
 ### Step 8
+Now, copy the line from step 6 (with the GITHUB_PAT stuff). Run the step 8 chunk in your lab and paste in the new file that opens. Then click save (little floppy disk symbol at the top). See the image below. 
+
+```{r eval=FALSE}
+usethis::edit_r_environ()
+```
+
+```{r github-auth-6, echo = FALSE}
+knitr::include_graphics("img/github-conn-6.PNG")
+```
+
+### Step 9
 Click save (little floppy disk symbol at the top). See the image above. 
 
 Yay! You did it!
