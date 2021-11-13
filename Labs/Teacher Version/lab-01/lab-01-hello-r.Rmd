@@ -12,6 +12,7 @@ link-citations: yes
 R is the name of the programming language itself and RStudio is a convenient interface.
 ```
 
+
 The main goal of this lab is to introduce you to R and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.
 
 ```{marginfigure}
