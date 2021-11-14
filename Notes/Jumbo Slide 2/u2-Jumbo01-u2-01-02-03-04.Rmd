@@ -27,10 +27,6 @@ loans_full_schema <- loans_full_schema %>%
   mutate(grade = factor(grade, ordered = TRUE))
 ```
 
-class: middle
-
----
-
 .your-turn[
 .light-blue[.hand[Your turn:]] `AE 02 - Bechdel + R Markdown`
 - [The Bechdel test](https://en.wikipedia.org/wiki/Bechdel_test) asks whether a work of fiction features at least two women who talk to each other about something other than a man, and there must be two women named characters.
@@ -39,6 +35,8 @@ class: middle
 ]
 
 ---
+
+class: middle
 
 # What is in a dataset?
 
