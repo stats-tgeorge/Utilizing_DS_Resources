@@ -1087,6 +1087,10 @@ ucbadmit %>%
   count(dept, gender, admit)
 ```
 
+???
+
+Note that this is hard to calculate with the current format of the data. Lets pivot wider. 
+
 ---
 
 .question[

@@ -1292,6 +1292,10 @@ ucbadmit %&gt;%
 ## # ... with 18 more rows
 ```
 
+???
+
+Note that this is hard to calculate with the current format of the data. Lets pivot wider. 
+
 ---
 
 .question[
@@ -2129,12 +2133,6 @@ ggplot(squirrels, aes(x = long, y = lat, color = where)) +
 .panelset[
 
 .panel[.panel-name[Plot]
-
-```
-## Warning: Computation failed in `stat_binhex()`:
-## The `hexbin` package is required for `stat_binhex()`
-```
-
 &lt;img src="u2-Jumbo04-u2-14-15-16-17_files/figure-html/unnamed-chunk-81-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 ]
 
@@ -2157,11 +2155,6 @@ squirrels %&gt;%
   left_join(hectare_centroids, by = "hectare") %&gt;%
   ggplot(aes(x = centroid_x, y = centroid_y, color = n)) +
   geom_hex()
-```
-
-```
-## Warning: Computation failed in `stat_binhex()`:
-## The `hexbin` package is required for `stat_binhex()`
 ```
 ]
 
