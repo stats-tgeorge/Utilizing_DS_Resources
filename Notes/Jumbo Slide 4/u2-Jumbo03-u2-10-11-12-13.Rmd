@@ -1,7 +1,7 @@
 ---
 title: "Data types"
 subtitle: "<br><br> Data Science in a Box"
-author: "[datasciencebox.org](https://datasciencebox.org/)"
+author: "[datasciencebox.org](https://datasciencebox.org/)  \nModified by Tyler George"
 output:
   xaringan::moon_reader:
     css: ["../xaringan-themer.css", "../slides.css"]
