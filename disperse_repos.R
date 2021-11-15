@@ -29,4 +29,17 @@ org_pending('DSC223-FB4-2021')
 
 
 # First you need to create a repo out of just the hw/lab you want to disperse
+# Next make it a template
+repo_set_template('DSC223-FB4-2021/DSC223-FB4-2021-lab-01-hello-r')
+
+repo_is_template('DSC223-FB4-2021/DSC223-FB4-2021-lab-01-hello-r')
+
+# This will create an individual assingment
+org_create_assignment(
+  org = "DSC223-FB4-2021",
+  user = roster$github,
+  repo = paste0("lab01-ind-", roster$github),
+  source_repo = 'DSC223-FB4-2021/DSC223-FB4-2021-lab-01-hello-r',
+  private = TRUE
+)
 
