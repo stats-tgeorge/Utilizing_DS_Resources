@@ -96,6 +96,8 @@ Go to [rstudio.server](http://turing:8787/).
 
 In RStudio, click on **File** then choose **New Project**. Click **Version control** and then **Git**.
 
+Make sure to copy the url from the repo associated to this assingment!
+
 ```{r new-project-from-git, echo = FALSE, eval = TRUE, fig.show = "hold", out.width = "30%"}
 knitr::include_graphics("img/new-project-from-gh_mod.png")
 knitr::include_graphics("img/new-project-from-gh_mod2.png")

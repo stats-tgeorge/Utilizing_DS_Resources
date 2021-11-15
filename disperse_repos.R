@@ -8,13 +8,14 @@ org_sitrep(org = "DSC223-FB4-2021")
 
 
 setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
-# Add students to organzation
+
 roster = read.csv('roster.csv')
 
-org_invite(org = 'DSC223-FB4-2021',user = roster$github)
+# Add students to organzation
+#org_invite(org = 'DSC223-FB4-2021',user = roster$github)
 
 # Add individual user
-org_invite(org = 'DSC223-FB4-2021', user = 'username')
+#org_invite(org = 'DSC223-FB4-2021', user = 'MMccoy22cornell')
 
 
 # Check current org members
@@ -24,9 +25,6 @@ org_members('DSC223-FB4-2021')
 org_pending('DSC223-FB4-2021')
 
 # This next section is how to prep and disperse repos
-
-# Assing teams
-
 
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
