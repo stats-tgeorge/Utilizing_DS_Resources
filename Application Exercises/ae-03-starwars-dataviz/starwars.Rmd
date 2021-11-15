@@ -1,6 +1,6 @@
 ---
 title: "Visualizing Starwars characters"
-author: "Mine Çetinkaya-Rundel"
+author: "Mine Çetinkaya-Rundel   \nModified by Tyler George"
 output: github_document
 ---
 
