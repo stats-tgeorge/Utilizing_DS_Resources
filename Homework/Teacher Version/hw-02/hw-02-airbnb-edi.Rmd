@@ -1,5 +1,5 @@
 ---
-title: "HW 02 - Airbnb listings in Edinburgh"
+title: "HW 02 - Airbnb listings in Edinburgh   \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../hw.css
@@ -26,10 +26,6 @@ Recent developments in Edinburgh regarding the growth of Airbnb and its impact o
 Using data provided by Airbnb, we can explore how Airbnb availability and prices vary by neighbourhood.
 
 # Getting started
-
-```{marginfigure}
-**IMPORTANT:** If there is no GitHub repo created for you for this assignment, it means I didn't have your GitHub username as of when I assigned the homework. Please let me know your GitHub username asap, and I can create your repo.
-```
 
 Go to the course GitHub organization and locate your homework repo, which should be named `hw-02-airbnb-edi-YOUR_GITHUB_USERNAME`.
 Grab the URL of the repo, and clone it in RStudio.

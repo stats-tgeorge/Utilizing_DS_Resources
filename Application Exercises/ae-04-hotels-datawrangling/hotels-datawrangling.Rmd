@@ -1,6 +1,6 @@
 ---
 title: "Hotel bookings - data wrangling"
-author: "Mine Çetinkaya-Rundel"
+author: "Mine Çetinkaya-Rundel   \n Modified by Tyler George"
 output: github_document
 ---
 
@@ -9,8 +9,10 @@ library(tidyverse)
 library(skimr)
 ```
 
+# From TidyTuesday: 
+[hotes]("https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md")
+
 ```{r load-data, message = FALSE}
-# From TidyTuesday: https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-02-11/readme.md
 hotels <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-11/hotels.csv")
 ```
 

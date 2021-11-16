@@ -1,7 +1,7 @@
 
-setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep/Notes/Jumbo Slide 2")
+setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep/Notes/Jumbo Slide 3")
 
-slide_name = "u2-Jumbo01-u2-01-02-03-04"
+slide_name = "u2-Jumbo02-u2-05-06-07-08-09"
 
 library(xaringanBuilder)
 
