@@ -7,7 +7,7 @@ library(gitcreds)
 org_sitrep(org = "DSC223-FB4-2021")
 
 
-setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
+setwd("G:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
 
 roster = read.csv('roster.csv')
 
@@ -29,13 +29,23 @@ org_pending('DSC223-FB4-2021')
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
 
-repo_name = "hw-02-airbnb-edi"
+repo_name = "AE04-hotels-datawrangling"
 
 repo_set_template(paste0("DSC223-FB4-2021/",repo_name))
 
 repo_is_template(paste0("DSC223-FB4-2021/",repo_name))
 
-# This will create an individual assingment
+
+# Add the rmarkdown compile badge
+action_add_badge(
+  repo=paste0("DSC223-FB4-2021/",repo_name),
+  workflow = 'Check Repo',
+  where = "^.",
+  line_padding = "\n\n\n",
+  file = "README.md"
+)
+
+# This will create an individual assignment
 org_create_assignment(
   org = "DSC223-FB4-2021",
   user = roster$github,
@@ -44,7 +54,7 @@ org_create_assignment(
   private = TRUE
 )
 
-#Team assingment
+#Team assignment
 org_create_assignment(
   org = "DSC223-FB4-2021",
   user = roster$github,
