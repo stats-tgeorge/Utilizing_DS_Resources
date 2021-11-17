@@ -15,7 +15,7 @@ roster = read.csv('roster.csv')
 #org_invite(org = 'DSC223-FB4-2021',user = roster$github)
 
 # Add individual user
-org_invite(org = 'DSC223-FB4-2021', user = 'Twu23')
+#org_invite(org = 'DSC223-FB4-2021', user = 'Twu23')
 
 
 # Check current org members
@@ -48,8 +48,8 @@ action_add_badge(
 # This will create an individual assignment
 org_create_assignment(
   org = "DSC223-FB4-2021",
-  user = roster$github,
-  repo = paste0(paste0(repo_name,"-indi-"), roster$github),
+  user = "Twu23",
+  repo = paste0(paste0(repo_name,"-indi-2"), "Twu23"),
   source_repo = paste0("DSC223-FB4-2021/",repo_name),
   private = TRUE
 )
