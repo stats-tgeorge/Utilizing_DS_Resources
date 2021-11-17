@@ -39,10 +39,10 @@ repo_is_template(paste0("DSC223-FB4-2021/",repo_name))
 # Add the rmarkdown compile badge
 action_add_badge(
   repo=paste0("DSC223-FB4-2021/",repo_name),
-  workflow = 'Check Repo',
-  where = "^.",
+  workflow = 'Render R Markdown files',
+  where = "",
   line_padding = "\n\n\n",
-  file = "README.md"
+  file = "Readme.md"
 )
 
 # This will create an individual assignment
