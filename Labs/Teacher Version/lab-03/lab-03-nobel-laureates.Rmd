@@ -1,5 +1,6 @@
 ---
-title: "Lab 03 - Nobel laureates"
+title: "Lab 03 - Nobel laureate"
+author: "Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../lab.css
@@ -28,12 +29,12 @@ In this lab we will work with the data from this article to recreate some of the
 
 You have two tasks you should complete before the lab:
 
--   **Task 1:** Read the Buzzfeed article titled [*These Nobel Prize Winners Show Why Immigration Is So Important For American Science*](https://www.buzzfeednews.com/article/peteraldhous/immigration-and-science)*.* We will replicate this analysis in the workshop so it's crucial that you're familiar with it ahead of time.
+-   **Task 1:** Read the Buzzfeed article titled [*These Nobel Prize Winners Show Why Immigration Is So Important For American Science*](https://www.buzzfeednews.com/article/peteraldhous/immigration-and-science)*.* We will replicate this analysis in class so it's crucial that you're familiar with it ahead of time.
 -   **Task 2:** Read about merge conflicts below. The merge conflict exercise we'll start with during the lab will assume that you have this background information.
 
 ## Merges and merge conflicts
 
-This is the second week you're working in teams, so we're going to make things a little more interesting and let all of you make changes and push those changes to your team repository.
+This is the second time you are working in teams so we're going to make things a little more interesting and let all of you make changes and push those changes to your team repository.
 Sometimes things will go swimmingly, and sometimes you'll run into merge conflicts.
 So our first task today is to walk you through a merge conflict!
 
@@ -70,18 +71,24 @@ Then you can stage and commit the result.
 
 ## Setup
 
--   Clone the repo and open the .Rmd file.
--   Assign the numbers 1, 2, 3, and 4 to each of the team members. If your team has fewer than 4 people, some people will need to have multiple numbers. If your team has more than 4 people, some people will need to share some numbers.
+Go to the course GitHub organization and locate your lab repo, which should be named `lab-03-nobel-laureates-YOUR_GITHUB_USERNAME`.
+Grab the URL of the repo, and clone it in RStudio.
+First, open the R Markdown document `lab-03.Rmd` and Knit it.
+Make sure it compiles without errors.
+The output will be in the file markdown `.md` file with the same name.
+
+Assign the numbers 1, 2, 3, and 4 to each of the team members. If your team has fewer than 4 people, some people will need to have multiple numbers. If your team has more than 4 people, some people will need to share some numbers.
 
 ## Let's cause a merge conflict!
+### This is **how** you are going to work together on this lab
 
 Our goal is to see two different types of merges: first we'll see a type of merge that git can't figure out on its own how to do on its own (a **merge conflict**) and requires human intervention, then another type of where that git can figure out how to do without human intervention.
 
 Doing this will require some tight choreography, so pay attention!
 
 Take turns in completing the exercise, only one member at a time.
-**Others should just watch, not doing anything on their own projects (this includes not even pulling changes!)** until they are instructed to.
-If you feel like you won't be able to resist the urge to touch your computer when it's not your turn, we recommend putting your hands in your pockets or sitting on them!
+**Others should just watch, not doing anything on their own labs (this includes not even pulling changes!)** until they are instructed to.
+If you feel like you won't be able to resist the urge to touch your computer when it's not your turn, I recommend putting your hands in your pockets or sitting on them!
 
 **Before starting**: everyone should have the repo cloned and know which role number(s) they are.
 
@@ -130,23 +137,7 @@ If you feel like you won't be able to resist the urge to touch your computer whe
 -   Knit, commit, and push often to minimize merge conflicts and/or to make merge conflicts easier to resolve.
 -   If you find yourself in a situation that is difficult to resolve, ask questions ASAP. Don't let it linger and get bigger.
 
-# Getting started
-
-Go to the course GitHub organization and locate your lab repo, which should be named `lab-03-nobel-laureates-YOUR_GITHUB_USERNAME`.
-Grab the URL of the repo, and clone it in RStudio.
-First, open the R Markdown document `lab-03.Rmd` and Knit it.
-Make sure it compiles without errors.
-The output will be in the file markdown `.md` file with the same name.
-
-## Warm up
-
-Before we introduce the data, let's warm up with some simple exercises.
-
--   Update the YAML, changing the author name to your name, and **knit** the document.
--   Commit your changes with a meaningful commit message.
--   Push your changes to GitHub.
--   Go to your repo on GitHub and confirm that your changes are visible in your Rmd **and** md files. If anything is missing, commit and push again.
-
+# Now to continue the lab...
 ## Packages
 
 We'll use the **tidyverse** package for much of the data wrangling.
@@ -159,7 +150,7 @@ library(tidyverse)
 
 ## Data
 
-The dataset for this assignment can be found as a CSv (comma separated values) file in the `data` folder of your repository.
+The dataset for this assignment can be found as a CSV (comma separated values) file in the `data` folder of your repository.
 You can read it in using the following.
 
 ```{r load-data, message = FALSE}

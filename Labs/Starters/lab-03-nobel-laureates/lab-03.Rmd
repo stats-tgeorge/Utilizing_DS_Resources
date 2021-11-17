@@ -17,6 +17,8 @@ nobel <- read_csv("data/nobel.csv")
 
 ## Exercises
 
+### Exercise 0 - Cause and resolve merge conflics
+
 ### Exercise 1
 
 Remove this text, and add your answer for Exercise 1 here.
