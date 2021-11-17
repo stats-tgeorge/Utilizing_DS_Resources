@@ -7,7 +7,7 @@ library(gitcreds)
 org_sitrep(org = "DSC223-FB4-2021")
 
 
-setwd("G:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
+setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
 
 roster = read.csv('roster.csv')
 
@@ -15,7 +15,7 @@ roster = read.csv('roster.csv')
 #org_invite(org = 'DSC223-FB4-2021',user = roster$github)
 
 # Add individual user
-#org_invite(org = 'DSC223-FB4-2021', user = 'MMccoy22cornell')
+org_invite(org = 'DSC223-FB4-2021', user = 'Twu23')
 
 
 # Check current org members
