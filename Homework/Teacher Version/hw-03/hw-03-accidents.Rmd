@@ -1,5 +1,5 @@
 ---
-title: "HW 03 - Road traffic accidents"
+title: "HW 03 - Road traffic accidents   \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../hw.css
@@ -27,10 +27,6 @@ The data are made available [online](https://data.gov.uk/dataset/cb7ae6f0-4be6-4
 It covers all recorded accidents in Edinburgh in 2018 and some of the variables were modified for the purposes of this assignment.
 
 # Getting started
-
-```{marginfigure}
-**IMPORTANT:** If there is no GitHub repo created for you for this assignment, it means I didn't have your GitHub username as of when I assigned the homework. Please let me know your GitHub username asap, and I can create your repo.
-```
 
 Go to the course GitHub organization and locate your homework repo, which should be named `hw-03-accidents-YOUR_GITHUB_USERNAME`.
 Grab the URL of the repo, and clone it in RStudio.
