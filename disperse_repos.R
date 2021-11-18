@@ -29,12 +29,19 @@ org_pending('DSC223-FB4-2021')
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
 
-repo_name = "AE04-hotels-datawrangling"
+repo_name = "lab-03-nobel-laureates"
 
 repo_set_template(paste0("DSC223-FB4-2021/",repo_name))
 
 repo_is_template(paste0("DSC223-FB4-2021/",repo_name))
 
+# add the yml file for badge
+setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Assignment and Lab Repos")
+dir.create("lab-03-nobel-laureates/.github")
+dir.create("lab-03-nobel-laureates/.github/Workflows")
+file.copy("U:/My Drive/Cornell College/Cornell Classes/Data Science/Tech Setup/check_rmd.yml", "lab-03-nobel-laureates/.github/workflows")
+
+# PUSH
 
 # Add the rmarkdown compile badge
 action_add_badge(
@@ -42,7 +49,7 @@ action_add_badge(
   workflow = 'Render R Markdown files',
   where = "",
   line_padding = "\n\n\n",
-  file = "Readme.md"
+  file = "README.md"
 )
 
 # This will create an individual assignment
