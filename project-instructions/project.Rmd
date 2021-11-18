@@ -1,5 +1,5 @@
 ---
-title: "Showcase your inner data scientist   /nModified by Tyler George"
+title: "Showcase your inner data scientist   \n Modified by Tyler George"
 output: 
   html_document: 
     css: project.css
@@ -68,24 +68,24 @@ You're not limited to these resources, and in fact you're encouraged to venture 
 3)  Executive summary - due 12/14/2021 
 
 ### Initial Meeting
-This includes a research question and one paragraph describing your intended project. Your group will also present the data you have found. Together, as a group, we will review your idea and discus your ideas. Every group member must contribute to this conversation. This also gives me an opportunity to help you decide if the data you have chosen will work for your questions of interest. 
+This includes a research question and one paragraph describing your intended project. Your group will also present the data you have found. Together, as a group, we will review your idea and discuss your ideas. Every group member must contribute to this conversation. This also gives me an opportunity to help you decide if the data you have chosen will work for your questions of interest. **I will be cloning you a repository to work on your project with. You do not need to copy and paste from this document** 
 
 The grading scheme for the project proposal is as follows.
 
 +-----------------------------------------------------------+----------+
-| Total                                                     | 5 pts   |
+| Total                                                     | 10 pts   |
 +===========================================================+==========+
-| Data                                                      | 2 pts    |
+| Data                                                      | 4 pts    |
 +-----------------------------------------------------------+----------+
-| Proposal                                                  | 3 pts    |
+| Proposal                                                  | 4 pts    |
 +-----------------------------------------------------------+----------+
-| Teamwork                                                  | 1 pt     |
+| Teamwork                                                  | 2 pt     |
 +-----------------------------------------------------------+----------+
 
 
 ### Preliminary Results
 
-This is a draft of the introduction section of your project as well as a data analysis plan and your dataset. **I will be cloning you a repository to work on your project with. You do not need to copy and paste from this document** 
+This is a draft of the introduction section of your project as well as a data analysis plan and your dataset. 
 
 -   **Section 1 - Introduction:** The introduction should introduce your general research question and your data (where it came from, how it was collected,what are the cases, what are the variables, etc.).
 
@@ -113,35 +113,43 @@ You can check a print preview to confirm length.
 The grading scheme for the project proposal is as follows.
 
 +-----------------------------------------------------------+-----------+
-| Total                                                     | 10 pts    |
+| Total                                                     | 40 pts    |
 +===========================================================+===========+
-| Data                                                      | 3  pts    |
+| Cleaned Data                                              | 5  pts    |
 +-----------------------------------------------------------+-----------+
-| Proposal                                                  | 5  pts    |
+| Preliminary Paper                                         | 20  pts   |
 +-----------------------------------------------------------+-----------+
-| Workflow, organization, code quality                      | 1  pt     |
+| Workflow, organization, code quality                      | 10  pt    |
 +-----------------------------------------------------------+-----------+
-| Teamwork                                                  | 1  pt     |
+| Teamwork                                                  | 5  pt     |
 +-----------------------------------------------------------+-----------+
 
 
 
-### Presentation
+### Presentation or Poster
 
 5 minutes maximum, and each team member should say something substantial.
-You can either present live during your workshop or pre-record and submit your video to be played during the workshop.
+You can either present live during class with either a poster, virtual poster, or presentation or pre-record and submit your video to be played during class.
 
+#### Slide Option
 Prepare a slide deck using the template in your repo.
 This template uses a package called `xaringan`, and allows you to make presentation slides using R Markdown syntax.
 There isn't a limit to how many slides you can use, just a time limit (5 minutes total).
 Each team member should get a chance to speak during the presentation.
-Your presentation should not just be an account of everything you tried ("then we did this, then we did this, etc."), instead it should convey what choices you made, and why, and what you found.
 
 Before you finalize your presentation, make sure your chunks are turned off with `echo = FALSE`.
 
-Presentations will take place during the last workshop of the semester.
+#### Virtual Poster
+See Moodle for a template.
+
+#### Poster (you need to get this printed)
+See Moodle for a template. 
+
+Whichever form you choose, your presentation should not just be an account of everything you tried ("then we did this, then we did this, etc."), instead it should convey what choices you made, and why, and what you found.
+
+Presentations will take place during the last day of class.
 You can choose to do your presentation live or pre-record it.
-During your workshop you will watch presentations from other teams in your workshop and provide feedback in the form of peer evaluations.
+During class you will watch presentations from other teams in your workshop and provide feedback in the form of peer evaluations.
 The presentation line-up will be generated randomly.
 
 The grading scheme for the presentation is as follows:
@@ -166,11 +174,11 @@ The grading scheme for the presentation is as follows:
 
 ### Executive summary
 
-Along with your presentation slides, we want you to provide a brief summary of your project in the README of your repository.
+Along with your visual presentation, your team should provide a brief summary of your project in the README of your repository.
 
 This executive summary should provide information on the dataset you're using, your research question(s), your methodology, and your findings.
 
-The executive summary is worth 15 points and will be evaluated based on whether it follows guidance and whether it's concise but detailed enough.
+The executive summary is worth 50 points and will be evaluated based on whether it follows guidance and whether it's concise but detailed enough.
 
 ### Repo organization
 
@@ -180,6 +188,7 @@ The following folders and files in your project repository:
 -   `README.Rmd` + `README.md`: Your write-up
 -   `/data`: Your dataset in CSV or RDS format and your data dictionary
 -   `/proposal`: Your project proposal
+-   `/Initial Meeting`: Your initial meeting document
 
 Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.
 
@@ -189,7 +198,7 @@ Style and format does count for this assignment, so please take the time to make
 
 -   Review the marking guidelines below and ask questions if any of the expectations are unclear.
 
--   Make sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team members).
+-   Make sure each team member is contributing, both in terms of quality and quantity of contribution (I will be reviewing commits from different team members).
 
 -   Set aside time to work together and apart (physically).
 
@@ -207,21 +216,23 @@ Style and format does count for this assignment, so please take the time to make
 
 ## Marking
 
-+----------------------------------------------------------+-----------+
-| Total                                                    | 100 pts   |
-+==========================================================+===========+
-| Proposal                                                 | 10 pts    |
-+----------------------------------------------------------+-----------+
-| Presentation                                             | 50 pts    |
-+----------------------------------------------------------+-----------+
-| Executive summary                                        | 15 pts    |
-+----------------------------------------------------------+-----------+
-| Reproducibility and organization                         | 10 pts    |
-+----------------------------------------------------------+-----------+
-| Team peer evaluation                                     | 10 pts    |
-+----------------------------------------------------------+-----------+
-| Classmates' evaluation                                   | 5 pts     |
-+----------------------------------------------------------+-----------+
++----------------------------------------------------------+------------+
+| Total                                                    | 200 pts    |
++==========================================================+============+
+| Initial Meeting                                          |  10 pts    |
++----------------------------------------------------------+------------+
+| Preliminary Results                                      |  40 pts    |
++----------------------------------------------------------+------------+
+| Presentation                                             |  50 pts    |
++----------------------------------------------------------+------------+
+| Executive summary                                        |  50 pts    |
++----------------------------------------------------------+------------+
+| Reproducibility and organization                         |  25 pts    |
++----------------------------------------------------------+------------+
+| Team peer evaluation                                     |  15 pts    |
++----------------------------------------------------------+------------+
+| Classmates' evaluation                                   |  10 pts    |
++----------------------------------------------------------+------------+
 
 ### Criteria
 
@@ -250,4 +261,3 @@ If any individual gets an average peer score indicating that they did less than 
 ### Late work policy
 
 -   There is no late submission / make up for the presentation. You must be in class on the day of the presentation to get credit for it *or* pre-record and submit your presentation by 9am in the morning of the presentations.
--   The late work policy for the write-up is 5% of the maximum obtainable mark per calendar day up to seven calendar days after the deadline. If you intend to submit work late for the project, you must notify the course organizer before the original deadline as well as as soon as the completed work is submitted on GitHub.
