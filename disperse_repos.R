@@ -29,7 +29,7 @@ org_pending('DSC223-FB4-2021')
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
 
-repo_name = "lab-03-nobel-laureates"
+repo_name = "ae-05-hotels-datatypes"
 
 repo_set_template(paste0("DSC223-FB4-2021/",repo_name))
 
@@ -37,9 +37,10 @@ repo_is_template(paste0("DSC223-FB4-2021/",repo_name))
 
 # add the yml file for badge
 setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Assignment and Lab Repos")
-dir.create("lab-03-nobel-laureates/.github")
-dir.create("lab-03-nobel-laureates/.github/Workflows")
-file.copy("U:/My Drive/Cornell College/Cornell Classes/Data Science/Tech Setup/check_rmd.yml", "lab-03-nobel-laureates/.github/workflows")
+
+dir.create(paste0(repo_name,"/.github"))
+dir.create(paste0(repo_name,"/.github/workflows"))
+file.copy("U:/My Drive/Cornell College/Cornell Classes/Data Science/Tech Setup/check_rmd.yml", paste0(repo_name,"/.github/workflows"))
 
 # PUSH
 
@@ -55,8 +56,8 @@ action_add_badge(
 # This will create an individual assignment
 org_create_assignment(
   org = "DSC223-FB4-2021",
-  user = "Twu23",
-  repo = paste0(paste0(repo_name,"-indi-2"), "Twu23"),
+  user = roster$github,
+  repo = paste0(paste0(repo_name,"-indi-2"), roster$github),
   source_repo = paste0("DSC223-FB4-2021/",repo_name),
   private = TRUE
 )
