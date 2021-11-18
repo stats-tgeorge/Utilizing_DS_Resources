@@ -1,15 +1,34 @@
-# This script is to disperse projects/labs/assignments to students
+# This script is to collect projects/labs/assignments from students
 
 library(ghclass)
-library(gitcreds)
-
+#library(gitcreds)
+library(gert)
 #gitcreds::gitcreds_set()
-org_sitrep(org = "DSC223-FB4-2021")
+#org_sitrep(org = "DSC223-FB4-2021")
+
+
+
+
+assingment_name = 'hw-1-ind'
+
+setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Student Worked Repos")
+
+dir.create(assingment_name)
+
+local_repo_clone(
+  repo = org_repos("DSC223-FB4-2021", "hw-1"),
+  local_path = assingment_name
+)
+
+
+
+
+
 
 
 setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
 
-roster = read.csv('roster.csv')
+
 
 # Add students to organzation
 #org_invite(org = 'DSC223-FB4-2021',user = roster$github)
