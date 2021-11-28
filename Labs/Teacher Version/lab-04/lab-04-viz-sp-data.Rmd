@@ -1,6 +1,7 @@
 ---
 title: "Lab 04 - La Quinta is Spanish for next to Denny's, Pt. 1"
 subtitle: "Visualizing spatial data"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
@@ -39,7 +40,7 @@ But for now we focus on the data that has already been scraped and tidied for yo
 
 # Getting started
 
-Go to the course GitHub organization and locate your homework repo, clone it in RStudio and open the R Markdown document.
+Go to the course GitHub organization and locate your repo, clone it in RStudio and open the R Markdown document.
 Knit the document to make sure it compiles without errors.
 
 ## Warm up

@@ -1,18 +1,19 @@
 Nobel winners
 ================
 Mine Çetinkaya-Rundel
+Modified by Tyler George
 
 ``` r
 library(tidyverse)
 ```
 
-Let’s first load the data:
+Let's first load the data:
 
 ``` r
 nobel <- ___(___)
 ```
 
-Then let’s split the data into two:
+Then let's split the data into two:
 
 ``` r
 # stem laureates

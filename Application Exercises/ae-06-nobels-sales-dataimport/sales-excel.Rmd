@@ -1,6 +1,6 @@
 ---
 title: "Sales"
-author: "Mine Çetinkaya-Rundel"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: github_document
 ---
 

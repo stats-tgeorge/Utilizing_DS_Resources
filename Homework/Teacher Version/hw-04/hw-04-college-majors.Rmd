@@ -1,5 +1,6 @@
 ---
 title: "HW 04 - What should I major in?"
+author: "Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../hw.css
