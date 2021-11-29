@@ -29,7 +29,7 @@ org_pending('DSC223-FB4-2021')
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
 
-repo_name = "hw-04-college-majors"
+repo_name = "hw-05-legos"
 
 repo_set_template(paste0("DSC223-FB4-2021/",repo_name))
 
@@ -62,7 +62,8 @@ org_create_assignment(
   private = TRUE
 )
 
-assin_name = "project"
+
+assin_name = "lab-05-wrangle-sp-data"
 
 #Team assignment
 org_create_assignment(

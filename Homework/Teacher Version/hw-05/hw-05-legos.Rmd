@@ -1,5 +1,6 @@
 ---
 title: "HW 05 - Legos"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../hw.css
@@ -22,7 +23,7 @@ knitr::opts_chunk$set(
 knitr::include_graphics("img/daniel-cheung-ZqqlOZyGG7g-unsplash.jpg")
 ```
 
-This week we'll do some data gymnastics to refresh and review what we learned over the past few weeks using (simulated) data from Lego sales in 2018 for a sample of customers who bought Legos in the US.
+This week we'll do some data gymnastics to refresh and review what we learned using (simulated) data from Lego sales in 2018 for a sample of customers who bought Legos in the US.
 
 # Getting started
 
