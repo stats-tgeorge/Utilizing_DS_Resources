@@ -1,6 +1,7 @@
 ---
 title: "Lab 05 - La Quinta is Spanish for next to Denny's, Pt. 2"
 subtitle: "Wrangling spatial data"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
