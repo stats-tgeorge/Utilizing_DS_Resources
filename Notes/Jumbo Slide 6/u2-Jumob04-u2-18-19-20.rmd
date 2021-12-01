@@ -1,7 +1,7 @@
 ---
 title: "Web scraping"
 subtitle: "<br><br> Data Science in a Box"
-author: "[datasciencebox.org](https://datasciencebox.org/)    /n Modified by Tyler George"
+author: "[datasciencebox.org](https://datasciencebox.org/)    \n Modified by Tyler George"
 output:
   xaringan::moon_reader:
     css: ["../xaringan-themer.css", "../slides.css"]
@@ -161,7 +161,7 @@ knitr::include_graphics("img/selector-gadget/selector-gadget.gif")
 
 ## Top 250 movies on IMDB
 
-Take a look at the source code, look for the tag `table` tag:
+Take a look at the source code, look for the tag `table` tag (control +u in chrome):
 <br>
 http://www.imdb.com/chart/top
 
