@@ -1,5 +1,6 @@
 ---
 title: "Lab 08 - University of Edinburgh Art Collection"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../lab.css
@@ -31,7 +32,7 @@ In this lab we'll scrape data on all art pieces in the [Edinburgh College of Art
 -   Iteration by mapping functions
 -   Writing data out
 
-# Lab prep
+# Lab prep - Everybody in Group at Once
 
 ```{r selectorgadget, fig.margin = TRUE, echo = FALSE}
 knitr::include_graphics("img/selectorgadget.png")
@@ -72,7 +73,7 @@ Here is the organization of your repo, and the corresponding section in the lab 
 ```
 # Getting started
 
-Go to the course GitHub organization and locate your homework repo, clone it in RStudio and open the R Markdown document.
+Have the starting group member go to the course GitHub organization and locate the lab 08 repo, clone it in RStudio and open the R Markdown document.
 Knit the document to make sure it compiles without errors.
 
 ## Warm up
