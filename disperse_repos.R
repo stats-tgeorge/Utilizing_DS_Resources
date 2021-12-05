@@ -29,7 +29,7 @@ org_pending('DSC223-FB4-2021')
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
 
-repo_name = "exam-01"
+repo_name = "lab-09-better-viz"
 
 repo_set_template(paste0("DSC223-FB4-2021/",repo_name))
 

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Misrepresentation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="datasciencebox.org" />
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="../xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="../slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Misrepresentation
+## <br><br> Data Science in a Box
+### <a href="https://datasciencebox.org/">datasciencebox.org</a>
+
+---
+
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;a href="https://datasciencebox.org" target="_blank"&gt;datasciencebox.org&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+
+
+class: middle
+
+# Causality
+
+---
+
+&lt;img src="img/exercise-cancer-time.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Alice Park. [Exercise Can Lower Risk of Some Cancers By 20%](https://time.com/4330041/reduce-cancer-risk-exercise/). Time Magazine. 16 May 2016.
+]
+]
+
+---
+
+&lt;img src="img/exercise-cancer-latimes.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Melissa Healy. [Exercising drives down risk for 13 cancers, research shows
+](https://www.latimes.com/science/sciencenow/la-sci-sn-exercising-cancer-20160516-story.html).  
+Los Angeles Times. 16 May 2016.
+]
+]
+
+---
+
+## Original study
+
+Moore, Steven C., et al. **["Association of leisure-time physical activity with risk of 26 types of cancer in 1.44 million adults."](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2521826)** JAMA internal medicine 176.6 (2016): 816-825.
+
+- **Volunteers** were **asked** about their physical activity level over the preceding year. 
+- Half exercised less than about 150 minutes per week, half exercised more. 
+- Compared to the bottom 10% of exercisers, the top 10% had lower rates of esophageal, liver, lung, endometrial, colon, and breast cancer.
+- Researchers found no association between exercising and 13 other cancers (e.g. pancreatic, ovarian, and brain).
+
+.footnote[
+.midi[
+Carl Bergstrom and Jevin West. [Calling Bullshit: The art of skepticism in a data-driven world](https://www.callingbullshit.org/).  
+Random House, 2020.  
+Sharon Begley. ["Does exercise prevent cancer?"](https://www.statnews.com/2016/05/16/exercise-prevent-cancer/). StatNews. 16 May 2016. 
+]
+]
+
+---
+
+class: middle
+
+# Axes and scale
+
+---
+
+.question[
+What is the difference between these two pictures? Which presents a better way to represent these data?
+]
+
+&lt;img src="img/axis-start-at-0.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Christopher Ingraham. ["You’ve been reading charts wrong. Here’s how a pro does it."](https://www.washingtonpost.com/business/2019/10/14/youve-been-reading-charts-wrong-heres-how-pro-does-it/).  
+The Washington Post. 14 October 2019.
+]
+]
+
+---
+
+.question[
+What is wrong with this picture? How would you correct it?
+]
+
+&lt;img src="img/cost_of_gas.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.pull-left-wide[
+&lt;img src="u3-Jumbo06-u3-1-2-3_files/figure-html/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right-narrow[
+&lt;img src="img/cost_of_gas.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.question[
+What is wrong with this picture? How would you correct it?
+]
+
+&lt;img src="img/ga-dph-declining-bars.jpg" width="75%" style="display: block; margin: auto auto auto 0;" /&gt;
+
+---
+
+## Graph detective
+
+.center[
+&lt;iframe width="900" height="450" src="https://livefreeordichotomize.com/2020/05/17/graph-detective/" frameborder="0"&gt;&lt;/iframe&gt;  
+]
+
+.footnote[
+.midi[
+Lucy D'Agostino McGowan. [Graph detective](https://livefreeordichotomize.com/2020/05/17/graph-detective/). Live Free or Dichotomize. 17 May 2020.
+]
+]
+
+---
+
+# Maps and areas
+
+---
+
+.question[
+Do you recognize this map? What does it show?
+]
+
+&lt;img src="img/election-2016-county.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+--
+
+.footnote[
+.midi[
+Lazaro Gamio. ["Election maps are telling you big lies about small things"](https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/).  
+The Washington Post. 1 Nov 2016.
+]
+]
+
+---
+
+.pull-left[
+&lt;img src="img/citizens-for-trump.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+--
+.pull-right[
+&lt;img src="img/counties-for-trump.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[
+.midi[
+Alberto Cairo. [Visual Trumpery talk](https://visualtrumperytour.wordpress.com/).
+]
+]
+
+---
+
+&lt;img src="img/cairo-vote-percentages.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Alberto Cairo. [Visual Trumpery talk](https://visualtrumperytour.wordpress.com/).
+]
+]
+
+---
+
+&lt;img src="img/cairo-what-matters.png" width="900" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Alberto Cairo. [Visual Trumpery talk](https://visualtrumperytour.wordpress.com/).
+]
+]
+
+---
+
+class: middle
+
+# Visualising uncertainty
+
+---
+
+On December 19, 2014, the front page of Spanish national newspaper El
+País read *"Catalan public opinion swings toward 'no' for independence, says survey"*.
+
+
+
+&lt;img src="u3-Jumbo06-u3-1-2-3_files/figure-html/catalan-misleading-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Alberto Cairo. [The truthful art: Data, charts, and maps for communication](http://www.thefunctionalart.com/p/the-truthful-art-book.html). New Riders, 2016.
+]
+]
+
+---
+
+.pull-left-wide[
+&lt;img src="u3-Jumbo06-u3-1-2-3_files/figure-html/unnamed-chunk-15-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right-narrow[
+&lt;img src="u3-Jumbo06-u3-1-2-3_files/figure-html/unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[
+.midi[
+Alberto Cairo. ["Uncertainty and Graphicacy: How Should Statisticians Journalists and Designers Reveal Uncertainty in Graphics for Public Consumption?"](https://ec.europa.eu/eurostat/cros/powerfromstatistics/OR/PfS-OutlookReport-Cairo.pdf), Power from Statistics: Data Information and Knowledge, 2017.
+]
+]
+
+---
+
+class: middle
+
+# Further reading
+
+---
+
+.pull-left[
+&lt;img src="img/cairo-how-charts-lie.jpg" width="350" style="display: block; margin: auto 0 auto auto;" /&gt;
+]
+.pull-right[
+[How Charts Lie](http://www.thefunctionalart.com/p/reviews.html)  
+Getting Smarter about Visual Information  
+
+by Alberto Cairo
+]
+
+---
+
+.pull-left[
+&lt;img src="img/calling-bullshit.png" width="350" style="display: block; margin: auto 0 auto auto;" /&gt;
+]
+.pull-right[
+[Calling Bullshit](https://www.callingbullshit.org/)  
+The Art of Skepticism in a  
+Data-Driven World   
+
+by Carl Bergstrom and Jevin West
+]
+
+# Case study: 
+# AOL search data leak 
+
+---
+
+&lt;img src="img/aol-data-leak.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Michael Barbaro and Tom Zeller Jr. [A Face Is Exposed for AOL Searcher No. 4417749](https://www.nytimes.com/2006/08/09/technology/09aol.html).  
+New York Times. 9 August 2006.
+]
+]
+
+---
+class: middle
+
+# Case study: 
+# OK Cupid
+
+---
+
+## OK Cupid data breach
+
+- In 2016, researchers published data of 70,000 OkCupid users—including usernames, political leanings, drug usage, and intimate sexual details
+
+- Researchers didn't release the real names and pictures of OKCupid users, but their identities could easily be uncovered from the details provided, e.g. usernames
+
+--
+
+.pull-left-wide[
+&gt;Some may object to the ethics of gathering and releasing this data. However, all the data found in the dataset are or were already publicly available, so releasing this dataset merely presents it in a more useful form. 
+&gt;
+&gt;Researchers Emil Kirkegaard and Julius Daugbjerg Bjerrekær
+]
+
+---
+
+.question[
+In analysis of data that individuals willingly shared publicly on a given platform (e.g. social media), how do you make sure you don't violate reasonable expectations of privacy?
+]
+
+&lt;img src="img/okcupid-tweet.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle
+
+# Case study: 
+# Facebook &amp; Cambridge Analytica
+
+---
+
+&lt;img src="img/facebook-cambridge-analytica-scandal-explained-the-guardian-graphic.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Carole Cadwalladr and Emma Graham-Harrison. [How Cambridge Analytica turned Facebook ‘likes’ into a lucrative political tool](https://www.theguardian.com/technology/2018/mar/17/facebook-cambridge-analytica-kogan-data-algorithm). The Guardian. 17 March 2018.
+]
+]
+
+---
+
+class: middle
+
+# Algorithmic bias and gender
+
+---
+
+## Google Translate
+
+&lt;img src="img/google-translate-gender-bias.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Amazon's experimental hiring algorithm
+
+- Used AI to give job candidates scores ranging from one to five stars -- much like shoppers rate products on Amazon
+- Amazon's system was not rating candidates for software developer jobs and other technical posts in a gender-neutral way; it taught itself that male candidates were preferable
+
+.pull-left-wide[
+&gt;Gender bias was not the only issue. Problems with the data that underpinned the models’ judgments meant that unqualified candidates were often recommended for all manner of jobs, the people said.
+]
+
+.footnote[
+Jeffrey Dastin. [Amazon scraps secret AI recruiting tool that showed bias against women](https://reut.rs/2Od9fPr).  
+Reuters. 10 Oct 2018.
+]
+
+---
+
+class: middle
+
+# Algorithmic bias and race
+
+---
+
+## Facial recognition
+
+&lt;img src="img/guardian-facial-recognition.png" width="35%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Ian Tucker. ['A white mask worked better': why algorithms are not colour blind](https://www.theguardian.com/technology/2017/may/28/joy-buolamwini-when-algorithms-are-racist-facial-recognition-bias).  
+The Guardian. 28 May 2017.
+]
+]
+
+---
+
+## Criminal Sentencing
+
+.center[
+There’s software used across the country to predict future criminals.  
+And it’s biased against blacks.
+]
+
+&lt;img src="img/propublica-criminal-sentencing.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+.midi[
+Julia Angwin, Jeff Larson, Surya Mattu, and Lauren Kirchner. [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing). 23 May 2016. ProPublica.
+]
+]
+
+---
+
+## A tale of two convicts
+
+.pull-left[
+![](img/propublica-prater-broden-1.png)
+]
+--
+.pull-right[
+![](img/propublica-prater-broden-2.png)
+]
+
+---
+
+class: middle
+
+&gt;“Although these measures were crafted with the best of intentions, I am concerned that they inadvertently undermine our efforts to ensure individualized and equal justice,” he said, adding, “they may exacerbate unwarranted and unjust disparities that are already far too common in our criminal justice system and in our society.”
+&gt;  
+&gt;Then U.S. Attorney General Eric Holder (2014)
+
+---
+
+## ProPublica analysis
+
+### **Data:**
+
+Risk scores assigned to more than 7,000 people arrested in Broward County, Florida, in 2013 and 2014 + whether they were charged with new crimes over the next two years
+
+---
+
+## ProPublica analysis
+
+### **Results:**
+
+- 20% of those predicted to commit violent crimes actually did
+- Algorithm had higher accuracy (61%) when full range of crimes taken into account (e.g. misdemeanors)
+&lt;img src="img/propublica-results.png" width="85%" style="display: block; margin: auto;" /&gt;
+- Algorithm was more likely to falsely flag black defendants as future criminals, at almost twice the rate as white defendants
+- White defendants were mislabeled as low risk more often than black defendants
+
+---
+
+## How to write a racist AI without trying
+
+.center[
+&lt;iframe width="900" height="450" src="https://notstatschat.rbind.io/2018/09/27/how-to-write-a-racist-ai-in-r-without-really-trying/" frameborder="0" style="background:white;"&gt;&lt;/iframe&gt;  
+]
+
+.footnote[
+.midi[
+Thomas Lumley. [How to write a racist AI in R without really trying](https://notstatschat.rbind.io/2018/09/27/how-to-write-a-racist-ai-in-r-without-really-trying/).  
+Biased and Inefficient. 27 September 2018.
+]
+]
+
+---
+
+class: middle
+
+# Further reading
+
+---
+
+## Machine Bias
+
+.pull-left[
+&lt;img src="img/propublica-machine-bias.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+[Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)  
+&lt;br&gt;
+by Julia Angwin, Jeff Larson, Surya Mattu, and Lauren Kirchner
+]
+
+---
+
+## Ethics and Data Science
+
+.pull-left[
+&lt;img src="img/ethics-data-science.jpg" width="65%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+[Ethics and Data Science](https://www.amazon.com/Ethics-Data-Science-Mike-Loukides-ebook/dp/B07GTC8ZN7)  
+&lt;br&gt;
+by Mike Loukides, Hilary Mason, DJ Patil  
+(Free Kindle download)
+]
+
+---
+
+## Weapons of Math Destruction
+
+.pull-left[
+&lt;img src="img/weapons-of-math-destruction.jpg" width="65%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+[Weapons of Math Destruction](https://www.penguin.co.uk/books/304/304513/weapons-of-math-destruction/9780141985411.html)  
+How Big Data Increases Inequality and Threatens Democracy  
+&lt;br&gt;
+by Cathy O'Neil
+]
+
+---
+
+## Algorithms of Oppression
+
+.pull-left[
+&lt;img src="img/algorithms-of-oppression.jpg" width="65%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+[Algorithms of Oppression](https://nyupress.org/9781479837243/algorithms-of-oppression/)  
+How Search Engines Reinforce Racism  
+&lt;br&gt;
+by Safiya Umoja Noble
+]
+
+---
+
+## Parting thoughts
+
+- At some point during your data science learning journey you will learn tools that can be used unethically
+- You might also be tempted to use your knowledge in a way that is ethically questionable either because of business goals or for the pursuit of further knowledge (or because your boss told you to do so)
+
+.question[
+How do you train yourself to make the right decisions (or reduce the likelihood of accidentally making the wrong decisions) at those points?
+]
+
+---
+
+## Do good with data
+
+- Data Science for Social Good: 
+  - [The Alan Turing Institute](https://www.turing.ac.uk/collaborate-turing/data-science-social-good)
+  - [University of Chicago](https://dssg.uchicago.edu/)
+- [DataKind](https://www.datakind.org/): DataKind brings high-impact organizations together with leading data scientists to use data science in the service of humanity.
+- Sign the Manifesto for Data Practices: [datapractices.org/manifesto](https://datapractices.org/manifesto/)
+
+---
+
+## Further watching
+
+.center[
+&lt;iframe width="800" height="450" src="https://www.youtube.com/embed/fgf2VjnhpCs?start=1162" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;  
+]
+
+.footnote[
+.midi[
+Julien Cornebise. AI for Good in the R and Python ecosystems. useR 2019.
+]
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightLines": true,
+"highlightStyle": "solarized-light",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

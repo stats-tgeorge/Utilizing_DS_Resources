@@ -1,5 +1,5 @@
 ---
-title: "Lab 09 - Conveying the right message through visualisation"
+title: "Lab 09 - Conveying the right message through visualisation    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
@@ -17,7 +17,7 @@ In this lab our goal is to reconstruct and improve a data visualisation on COVID
 
 # Getting started
 
-Go to the course GitHub organization and locate your homework repo, clone it in RStudio and open the R Markdown document.
+Have the first group member working go to the course GitHub organization and locate the lab repo, clone it in RStudio and open the R Markdown document.
 Knit the document to make sure it compiles without errors.
 
 ## Warm up
@@ -50,10 +50,11 @@ The following visualisation was shared [on Twitter](https://twitter.com/JonBoeck
 knitr::include_graphics("img/masks-v-nomasks.png")
 ```
 
-Before you join the workshop, think about what is misleading about this visualisation and how you might go about fixing it.
-Take some notes and bring your notes to the workshop to share with your teammates.
+1. Think about and discuss in your group what is misleading about this visualisation and how you might go about fixing it. Make a list below. HINT: Go find the RMarkdown cheatsheet on our Moodle page for how to create a ``list."
 
-1.  Create a data frame that can be used to re-construct this visualisation. You may need to guess some of the numbers, that's ok. You should first think about how many rows and columns you'll need and what you want to call your variables. Then, you can use the `tribble()` function for this. For example, if you wanted to construct the following data frame
+2. For each item on your list in (1), what are the potential reproucssions? 
+
+3.  Create a data frame that can be used to re-construct this visualisation. You may need to **guess** some of the numbers, that's ok. You should first think about how many rows and columns you'll need and what you want to call your variables. Then, you can use the `tribble()` function for this. For example, if you wanted to construct the following data frame
 
 ```{r tribble, echo = FALSE}
 df <- tribble(
@@ -73,15 +74,11 @@ you can write
 ```{r ref.label="tribble", eval = FALSE}
 ```
 
-```{marginfigure}
-Since the exercises for this week are short it's possible not every team member will get to commit and push **during** the workshop. However each team member should review what was created, fix typos, make edits for better presentation, etc. either during or after the workshop, and before the deadline.
-```
+4.  Make a visualisation that more accurately (and honestly) tells the story.
 
-2.  Make a visualisation that more accurately (and honestly) tells the story.
+5.  What message is more clear in your visualisation than it was in the original visualisation?
 
-3.  What message is more clear in your visualisation than it was in the original visualisation?
-
-4.  What, if any, useful information do these data and your visualisation tell us about mask wearing and COVID?
+6.  What, if any, useful information do these data and your visualisation tell us about mask wearing and COVID?
     It'll be difficult to set aside what you already know about mask wearing, but you should try to focus only on what this visualisation tells.
     Feel free to also comment on whether that lines up with what you know about mask wearing.
 
