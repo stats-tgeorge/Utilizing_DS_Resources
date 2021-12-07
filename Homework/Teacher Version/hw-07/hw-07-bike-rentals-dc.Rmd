@@ -1,5 +1,6 @@
 ---
 title: "HW 07 - Bike rentals in DC"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     css: ../hw.css
