@@ -1,6 +1,7 @@
 ---
 title: "Lab 10 - Grading the professor, Pt. 1"
 subtitle: "Modelling with a single predictor"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
@@ -32,7 +33,7 @@ In addition, six students rated the professors' physical appearance.
 
 # Getting started
 
-Go to the course GitHub organization and locate your homework repo, clone it in RStudio and open the R Markdown document.
+Go to the course GitHub organization and locate your lab repo, clone it in RStudio and open the R Markdown document.
 Knit the document to make sure it compiles without errors.
 
 ## Warm up
@@ -94,14 +95,14 @@ Linear model is in the form $\hat{y} = b_0 + b_1 x$.
     Fit a linear model called `score_bty_fit` to predict average professor evaluation `score` by average beauty rating (`bty_avg`).
     Based on the regression output, write the linear model.
 
-5.  Recreate the scatterplot from Exercise 2, and add the regression line to this plot in orange colour, with shading for the uncertainty of the line turned off.
+5.  Recreate the scatterplot from Exercise 2, and add the regression line to this plot in orange color.
 
 6.  Interpret the slope of the linear model in context of the data.
 
 7.  Interpret the intercept of the linear model in context of the data.
     Comment on whether or not the intercept makes sense in this context.
 
-8.  Determine the $R^2$ of the model and interpret it in context of the data.
+8.  Determine the $R^2$ of the model and interpret it in context of the data. Let me know if nobody in your group has covered this topic in the past. 
 
 🧶 ✅ ⬆️ *If you haven't done so recently, knit, commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
