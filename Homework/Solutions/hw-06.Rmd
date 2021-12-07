@@ -1,0 +1,56 @@
+---
+title: "HW 06 - Money in politics"
+author: "Insert your name here"
+date: "Insert date here"
+output: github_document
+---
+
+## Load packages and data
+
+```{r load-packages, message = FALSE}
+library(tidyverse)
+library(rvest)
+library(scales)
+```
+
+## Exercises
+
+### Exercise 1
+```{r}
+pac_all <- read.csv("c:/users/chewy/desktop/pac-all.csv")
+```
+### Exercise 2
+
+```{r}
+pac_all %>%
+  separate(
+  country_parent,
+  c("country", "parent"),
+  sep = "/",
+  remove = TRUE,
+  extra = "merge"
+)
+
+pac_all <- pac_all %>%mutate(
+  total = as.numeric(str_remove_all(total, "[\\$,]")),
+  dems = as.numeric(str_remove_all(dems, "[\\$,]")),
+  repubs = as.numeric(str_remove_all(repubs, "[\\$,]") ))
+
+
+
+```
+
+### Exercise 3
+
+Remove this text, and add your answer for Exercise 3 here.
+Add code chunks as needed.
+Don't forget to label your code chunk.
+Do not use spaces in code chunk labels.
+
+### Exercise 4
+
+...
+
+### Exercise 5
+
+...
