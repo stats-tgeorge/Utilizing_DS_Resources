@@ -1,6 +1,7 @@
 ---
 title: "Lab 11 - Grading the professor, Pt. 2"
 subtitle: "Modelling with multiple predictors"
+author: "Mine Çetinkaya-Rundel    \n Modified by Tyler George"
 output: 
   tufte::tufte_html:
     tufte_variant: "envisioned"
@@ -27,7 +28,7 @@ For context, review the previous lab's introduction before continuing on to the 
 
 # Getting started
 
-Go to the course GitHub organization and locate your homework repo, clone it in RStudio and open the R Markdown document.
+Go to the course GitHub organization and locate your lab repo, clone it in RStudio and open the R Markdown document.
 Knit the document to make sure it compiles without errors.
 
 ## Warm up
@@ -83,7 +84,7 @@ You can also find this information [here](https://www.openintro.org/data/index.p
 8.  How does the relationship between beauty and evaluation score vary between male and female professors?
 
 9.  How do the adjusted $R^2$ values of `score_bty_gen_fit` and `score_bty_fit` compare?
-    What does this tell us about how useful `gender` is in explaining the variability in evaluation scores when we already have information on the beuaty score of the professor.
+    What does this tell us about how useful `gender` is in explaining the variability in evaluation scores when we already have information on the beauty score of the professor.
 
 10. Compare the slopes of `bty_avg` under the two models (`score_bty_fit` and `score_bty_gen_fit`).
     Has the addition of `gender` to the model changed the parameter estimate (slope) for `bty_avg`?
