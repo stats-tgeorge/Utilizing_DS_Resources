@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="Tyler George" />
+
+
+<title>Lab 15 - Shiny Intro</title>
+
+<link href="data:text/css;charset=utf-8,%0A%40charset%20%22UTF%2D8%22%3B%0A%0Ahtml%20%7B%20font%2Dsize%3A%2015px%3B%20%7D%0Abody%20%7B%20width%3A%2087%2E5%25%3B%0Amargin%2Dleft%3A%20auto%3B%0Amargin%2Dright%3A%20auto%3B%0Apadding%2Dleft%3A%2012%2E5%25%3B%0Acolor%3A%20%23111%3B%0Amax%2Dwidth%3A%201400px%3B%0Acounter%2Dreset%3A%20sidenote%2Dcounter%3B%20%7D%0Ah1%2Etitle%20%7B%20font%2Dweight%3A%20400%3B%0Afont%2Dstyle%3A%20normal%3B%0Amargin%2Dtop%3A%204rem%3B%0Amargin%2Dbottom%3A%201%2E5rem%3B%0Afont%2Dsize%3A%203%2E2rem%3B%0Aline%2Dheight%3A%201%3B%20%7D%0Ah1%20%7B%0Afont%2Dweight%3A%20400%3B%0Amargin%2Dtop%3A%202%2E1rem%3B%0Amargin%2Dbottom%3A%200%3B%0Afont%2Dsize%3A%202%2E2rem%3B%0Aline%2Dheight%3A%201%3B%20%7D%0Ah2%20%7B%0Afont%2Dweight%3A%20400%3B%0Afont%2Dsize%3A%201%2E7rem%3B%0Amargin%2Dtop%3A%202rem%3B%0Amargin%2Dbottom%3A%200%3B%0Aline%2Dheight%3A%201%3B%20%7D%0Ah3%2Esubtitle%20%7B%0Afont%2Dweight%3A%20400%3B%0Amargin%2Dtop%3A%201rem%3B%0Amargin%2Dbottom%3A%201rem%3B%0Afont%2Dsize%3A%201%2E8rem%3B%0Adisplay%3A%20block%3B%0Aline%2Dheight%3A%201%3B%20%7D%0Ah4%2Eauthor%2C%20h4%2Edate%20%7B%0Afont%2Dsize%3A%201%2E4rem%3B%0Afont%2Dweight%3A%20400%3B%0Amargin%3A%201rem%20auto%3B%0Aline%2Dheight%3A%201%3B%0A%7D%0A%2Edanger%20%7B%20color%3A%20red%3B%20%7D%0Aarticle%20%7B%20position%3A%20relative%3B%0Apadding%3A%205rem%200rem%3B%20%7D%0Asection%20%7B%20padding%2Dtop%3A%201rem%3B%0Apadding%2Dbottom%3A%201rem%3B%20%7D%0Ap%2C%20ol%2C%20ul%20%7B%20font%2Dsize%3A%201%2E4rem%3B%20%7D%0Ap%20%7B%20line%2Dheight%3A%202rem%3B%0Amargin%2Dtop%3A%201%2E4rem%3B%0Amargin%2Dbottom%3A%201%2E4rem%3B%0Apadding%2Dright%3A%200%3B%0Avertical%2Dalign%3A%20baseline%3B%20%7D%0Ablockquote%20%7B%20font%2Dsize%3A%201%2E4rem%3B%20%7D%0Ablockquote%20p%20%7B%20width%3A%2050%25%3B%20%7D%0Ablockquote%20footer%20%7B%20width%3A%2050%25%3B%0Afont%2Dsize%3A%201%2E1rem%3B%0Atext%2Dalign%3A%20right%3B%20%7D%0Aol%2C%20ul%20%7B%20width%3A%2045%25%3B%0A%2Dwebkit%2Dpadding%2Dstart%3A%205%25%3B%0A%2Dwebkit%2Dpadding%2Dend%3A%205%25%3B%20%7D%0Ali%20%7B%20padding%3A%200%2E5rem%200%3B%20%7D%0Atable%20%7B%0Aborder%2Dtop%3A%202px%20solid%20%23111%3B%0Aborder%2Dbottom%3A%202px%20solid%20%23111%3B%0Afont%2Dsize%3A%201%2E1rem%3B%0A%7D%0Ath%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23111%3B%0A%7D%0Adiv%2Efigure%20%7B%0Apadding%3A%200%3B%0Aborder%3A%200%3B%0Afont%2Dsize%3A%20100%25%3B%0Afont%3A%20inherit%3B%0Avertical%2Dalign%3A%20baseline%3B%0Amax%2Dwidth%3A%2055%25%3B%0A%2Dwebkit%2Dmargin%2Dstart%3A%200%3B%0A%2Dwebkit%2Dmargin%2Dend%3A%200%3B%0Amargin%3A%200%200%203em%200%3B%0A%7D%0A%0Aa%3Alink%2C%20a%3Avisited%20%7B%20color%3A%20inherit%3B%20%7D%0Aa%3Alink%20%7B%20text%2Ddecoration%3A%20none%3B%0Abackground%3A%20%2Dwebkit%2Dlinear%2Dgradient%28%23fffff8%2C%20%23fffff8%29%2C%20%2Dwebkit%2Dlinear%2Dgradient%28%23fffff8%2C%20%23fffff8%29%2C%20%2Dwebkit%2Dlinear%2Dgradient%28%23333%2C%20%23333%29%3B%0Abackground%3A%20linear%2Dgradient%28%23fffff8%2C%20%23fffff8%29%2C%20linear%2Dgradient%28%23fffff8%2C%20%23fffff8%29%2C%20linear%2Dgradient%28%23333%2C%20%23333%29%3B%0A%2Dwebkit%2Dbackground%2Dsize%3A%200%2E05em%201px%2C%200%2E05em%201px%2C%201px%201px%3B%0A%2Dmoz%2Dbackground%2Dsize%3A%200%2E05em%201px%2C%200%2E05em%201px%2C%201px%201px%3B%0Abackground%2Dsize%3A%200%2E05em%201px%2C%200%2E05em%201px%2C%201px%201px%3B%0Abackground%2Drepeat%3A%20no%2Drepeat%2C%20no%2Drepeat%2C%20repeat%2Dx%3B%0Atext%2Dshadow%3A%200%2E03em%200%20%23fffff8%2C%20%2D0%2E03em%200%20%23fffff8%2C%200%200%2E03em%20%23fffff8%2C%200%20%2D0%2E03em%20%23fffff8%2C%200%2E06em%200%20%23fffff8%2C%20%2D0%2E06em%200%20%23fffff8%2C%200%2E09em%200%20%23fffff8%2C%20%2D0%2E09em%200%20%23fffff8%2C%200%2E12em%200%20%23fffff8%2C%20%2D0%2E12em%200%20%23fffff8%2C%200%2E15em%200%20%23fffff8%2C%20%2D0%2E15em%200%20%23fffff8%3B%0Abackground%2Dposition%3A%200%25%2093%25%2C%20100%25%2093%25%2C%200%25%2093%25%3B%20%7D%0A%40media%20screen%20and%20%28%2Dwebkit%2Dmin%2Ddevice%2Dpixel%2Dratio%3A%200%29%20%7B%20a%3Alink%20%7B%20background%2Dposition%2Dy%3A%2087%25%2C%2087%25%2C%2087%25%3B%20%7D%20%7D%0Aa%3Alink%3A%3Aselection%20%7B%20text%2Dshadow%3A%200%2E03em%200%20%23b4d5fe%2C%20%2D0%2E03em%200%20%23b4d5fe%2C%200%200%2E03em%20%23b4d5fe%2C%200%20%2D0%2E03em%20%23b4d5fe%2C%200%2E06em%200%20%23b4d5fe%2C%20%2D0%2E06em%200%20%23b4d5fe%2C%200%2E09em%200%20%23b4d5fe%2C%20%2D0%2E09em%200%20%23b4d5fe%2C%200%2E12em%200%20%23b4d5fe%2C%20%2D0%2E12em%200%20%23b4d5fe%2C%200%2E15em%200%20%23b4d5fe%2C%20%2D0%2E15em%200%20%23b4d5fe%3B%0Abackground%3A%20%23b4d5fe%3B%20%7D%0Aa%3Alink%3A%3A%2Dmoz%2Dselection%20%7B%20text%2Dshadow%3A%200%2E03em%200%20%23b4d5fe%2C%20%2D0%2E03em%200%20%23b4d5fe%2C%200%200%2E03em%20%23b4d5fe%2C%200%20%2D0%2E03em%20%23b4d5fe%2C%200%2E06em%200%20%23b4d5fe%2C%20%2D0%2E06em%200%20%23b4d5fe%2C%200%2E09em%200%20%23b4d5fe%2C%20%2D0%2E09em%200%20%23b4d5fe%2C%200%2E12em%200%20%23b4d5fe%2C%20%2D0%2E12em%200%20%23b4d5fe%2C%200%2E15em%200%20%23b4d5fe%2C%20%2D0%2E15em%200%20%23b4d5fe%3B%0Abackground%3A%20%23b4d5fe%3B%20%7D%0A%0Aimg%20%7Bmax%2Dwidth%3A%20100%25%3B%7D%0A%2Emarginnote%20img%20%7B%20display%3A%20block%3B%20%7D%0A%2Esidenote%2C%20%2Emarginnote%20%7B%20float%3A%20right%3B%0Aclear%3A%20right%3B%0Amargin%2Dright%3A%20%2D60%25%3B%0Awidth%3A%2050%25%3B%0Amargin%2Dtop%3A%200%3B%0Amargin%2Dbottom%3A%201rem%3B%0Afont%2Dsize%3A%201%2E1rem%3B%0Aline%2Dheight%3A%201%2E3%3B%0Avertical%2Dalign%3A%20baseline%3B%0Aposition%3A%20relative%3B%20%7D%0A%2Esidenote%2Dnumber%20%7B%0Aposition%3A%20relative%3B%0Avertical%2Dalign%3A%20baseline%3B%20%7D%0A%2Esidenote%2Dnumber%20%7B%20font%2Dsize%3A%201rem%3B%0Atop%3A%20%2D0%2E5rem%3B%0Aleft%3A%200%2E1rem%3B%20%7D%0Ap%2C%20footer%2C%20table%2C%20hr%20%7B%20width%3A%2055%25%3B%20%7D%0Ahr%20%7B%20margin%2Dleft%3A%200%3B%20%7D%0Atable%20table%2C%20li%20p%2C%20li%20pre%20%7B%20width%3A%20auto%3B%20%7D%0Ali%20p%2C%20li%20pre%20%7Bmargin%2Dtop%3A%20auto%3B%20%7D%0Adiv%2Efullwidth%2C%20table%2Efullwidth%20%7B%20max%2Dwidth%3A%2090%25%3B%20%7D%0Adiv%2Efullwidth%20%3E%20%2A%20%7B%20width%3A%20auto%3B%20%7D%0A%23TOC%2C%20h1%2Etitle%20%7B%20max%2Dwidth%3A%2090%25%3B%20%7D%0A%23TOC%20ol%2C%20%23TOC%20ul%20%7B%20width%3A%20auto%3B%20%7D%0Adiv%2Efullwidth%20p%2Ecaption%20%7B%0Amargin%2Dright%3A%200%3B%0Amax%2Dwidth%3A%2033%25%3B%0A%7D%0Ap%2Ecaption%20%7B%20text%2Dalign%3A%20left%3B%20%7D%0A%40media%20screen%20and%20%28max%2Dwidth%3A%20760px%29%20%7B%20p%2C%20footer%2C%20ol%2C%20ul%2C%20table%2C%20hr%20%7B%20width%3A%2090%25%3B%20%7D%0Apre%20%7B%20width%3A%2087%2E5%25%3B%20%7D%0Aul%20%7B%20width%3A%2085%25%3B%20%7D%0Afigure%20%7B%20max%2Dwidth%3A%2090%25%3B%20%7D%0Adiv%2Efullwidth%20p%2Ecaption%20%7B%20max%2Dwidth%3A%20none%3B%20%7D%0Ablockquote%20p%2C%20blockquote%20footer%20%7B%20width%3A%2090%25%3B%20%7D%7D%0A%2Esans%20%7B%20font%2Dfamily%3A%20%22Gill%20Sans%22%2C%20%22Gill%20Sans%20MT%22%2C%20Calibri%2C%20sans%2Dserif%3B%0Aletter%2Dspacing%3A%20%2E03em%3B%20%7D%0Acode%20%7B%20font%2Dfamily%3A%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0Afont%2Dsize%3A%201%2E125rem%3B%0Aline%2Dheight%3A%201%2E6%3B%20%7D%0Apre%20code%20%7B%20font%2Dsize%3A%201rem%3B%20%7D%0Ap%20code%20%7B%20white%2Dspace%3A%20inherit%3B%20%7D%0Ah1%20code%2C%20h2%20code%2C%20h3%20code%20%7B%20font%2Dsize%3A%200%2E80em%3B%20%7D%0A%2Emarginnote%20code%2C%20%2Esidenote%20code%20%7B%20font%2Dsize%3A%201rem%3B%20%7D%0Apre%20%7B%20width%3A%2052%2E5%25%3B%0Aoverflow%2Dx%3A%20auto%3B%20%7D%0A%2Efullwidth%20%7B%20max%2Dwidth%3A%2090%25%3B%0Aclear%3Aboth%3B%20%7D%0Aspan%2Enewthought%20%7B%20font%2Dvariant%3A%20small%2Dcaps%3B%0Afont%2Dsize%3A%201%2E2em%3B%20%7D%0Ainput%2Emargin%2Dtoggle%20%7B%20display%3A%20none%3B%20%7D%0Alabel%2Esidenote%2Dnumber%20%7B%20display%3A%20inline%3B%20%7D%0Alabel%2Emargin%2Dtoggle%3Anot%28%2Esidenote%2Dnumber%29%20%7B%20display%3A%20none%3B%20%7D%0A%40media%20%28max%2Dwidth%3A%20760px%29%20%7B%20label%2Emargin%2Dtoggle%3Anot%28%2Esidenote%2Dnumber%29%20%7B%20display%3A%20inline%3B%20%7D%0A%2Esidenote%2C%20%2Emarginnote%20%7B%20display%3A%20none%3B%20%7D%0A%2Eshownote%2C%0A%2Emargin%2Dtoggle%3Achecked%20%2B%20%2Esidenote%2C%0A%2Emargin%2Dtoggle%3Achecked%20%2B%20%2Emarginnote%20%7B%0Adisplay%3A%20block%3B%0Afloat%3A%20left%3B%0Aleft%3A%201rem%3B%0Aclear%3A%20both%3B%0Awidth%3A%2095%25%3B%0Amargin%3A%201rem%202%2E5%25%3B%0Avertical%2Dalign%3A%20baseline%3B%0Aposition%3A%20relative%3B%0A%7D%0Alabel%20%7B%20cursor%3A%20pointer%3B%20%7D%0Adiv%2Efigure%20%7B%20max%2Dwidth%3A%2090%25%3B%20%7D%0Apre%20%7B%20width%3A%2090%25%3B%0Apadding%3A%200%3B%20%7D%0A%7D%0A" rel="stylesheet" />
+<link href="data:text/css;charset=utf-8,%40import%20%27https%3A%2F%2Ffonts%2Egoogleapis%2Ecom%2Fcss%3Ffamily%3DRoboto%2BCondensed%27%3B%0Abody%20%7B%0Afont%2Dfamily%3A%20%27Roboto%20Condensed%27%2C%20Arial%2C%20Helvetica%2C%20sans%2Dserif%3B%0Abackground%2Dcolor%3A%20%23fefefe%3B%0Acolor%3A%20%23222%3B%0A%7D%0A%2Enumeral%2C%20%2Esidenote%2Dnumber%20%7B%20font%2Dfamily%3A%20%22Roboto%20Condensed%22%3B%20%7D%0A" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+<link href="data:text/css;charset=utf-8,%0A%40import%20%27https%3A%2F%2Ffonts%2Egoogleapis%2Ecom%2Fcss%3Ffamily%3DSource%2BSans%2BPro%3A300%2C400%2C600%2C700%27%3B%0A%40import%20%27https%3A%2F%2Ffonts%2Egoogleapis%2Ecom%2Fcss%3Ffamily%3DSource%2BCode%2BPro%27%3B%0A%40charset%20%22UTF%2D8%22%3B%0A%0A%3Aroot%20%7B%0A%2D%2Ddark%2Dblue%3A%20%23002b36%3B%0A%2D%2Dlight%2Dblue%3A%20%23A7D5E8%3B%0A%2D%2Dgreen%3A%20%238fada7%3B%0A%2D%2Dgray%3A%20%23A7A7A7%3B%0A%2D%2Dpink%3A%20%23E9AFA3%3B%0A%2D%2Dyellow%3A%20%23e9d968%3B%0A%2D%2Dbeige%3A%20%23fdf6e3%3B%0A%2D%2Dgreen%2Dfaint%3A%20%238fada750%3B%0A%2D%2Dlight%2Dblue%2Dfaint%3A%20%23A7D5E850%3B%0A%2D%2Dpink%2Dfaint%3A%20%23E9AFA350%3B%0A%7D%0A%0Abody%20%7B%0Afont%2Dfamily%3A%20%27Source%20Sans%20Pro%27%2C%20sans%2Dserif%3B%0Afont%2Dweight%3A%20300%3B%0Abackground%2Dcolor%3A%20%23ffffff%3B%0Acolor%3A%20%23222%3B%0Acounter%2Dreset%3A%20li%3B%0A%7D%0Ah1%2Etitle%20%7B%0Afont%2Dweight%3A%20700%3B%0Afont%2Dfamily%3A%20%27Source%20Sans%20Pro%27%2C%20sans%2Dserif%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0A%7D%0Ah1%20%7B%0Afont%2Dstyle%3A%20normal%3B%0Afont%2Dfamily%3A%20%27Source%20Sans%20Pro%27%2C%20sans%2Dserif%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0A%7D%0Ah2%20%7B%0Afont%2Dstyle%3A%20normal%3B%0Afont%2Dfamily%3A%20%27Source%20Sans%20Pro%27%2C%20sans%2Dserif%3B%0Afont%2Dweight%3A%20400%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0A%7D%0Ah3%2Esubtitle%20%7B%0Afont%2Dstyle%3A%20normal%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0A%7D%0Ah4%20%7B%0Afont%2Dstyle%3A%20normal%3B%0Afont%2Dweight%3A%20400%3B%0Afont%2Dfamily%3A%20%27Source%20Sans%20Pro%27%2C%20sans%2Dserif%3B%0Amargin%2Dtop%3A%201%2E5rem%3B%0Amargin%2Dbottom%3A%200%3B%0Aline%2Dheight%3A%201%3B%0A%7D%0Ah4%2Eauthor%2C%0Ah4%2Edate%20%7B%0Afont%2Dfamily%3A%20%27Source%20Sans%20Pro%27%2C%20sans%2Dserif%3B%0Afont%2Dweight%3A%20300%3B%0A%7D%0A%2Enumeral%20%7B%0Afont%2Dfamily%3A%20%22Source%20Sans%20Pro%22%3B%0Afont%2Dweight%3A%20300%3B%0A%7D%0Aem%20%7B%0Afont%2Dstyle%3A%20italic%3B%0Afont%2Dweight%3A%20300%3B%0Afont%2Dfamily%3A%20%22Source%20Sans%20Pro%22%3B%0A%7D%0Astrong%20%7B%0Afont%2Dstyle%3A%20bold%3B%0Afont%2Dweight%3A%20600%3B%0Afont%2Dfamily%3A%20%22Source%20Sans%20Pro%22%3B%0A%7D%0A%2Emarginnote%20code%2C%0A%2Esidenote%20code%20%7B%0Afont%2Dsize%3A%201rem%3B%0A%7D%0A%0A%40media%20screen%20and%20%28max%2Dwidth%3A%20760px%29%20%7B%0Apre%20%7B%0Awidth%3A%20100%25%3B%0Afont%2Dsize%3A%2016px%3B%0Aoverflow%2Dx%3A%20auto%3B%0A%7D%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20%27Source%20Code%20Pro%27%2C%20Consolas%2C%20%22Liberation%20Mono%22%2C%20Menlo%2C%20Courier%2C%20monospace%3B%0Aline%2Dheight%3A%201%2E6%3B%0A%7D%0Apre%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Aborder%2Dcolor%3A%20%23CCCCCC%3B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dradius%3A%204px%3B%0Aoverflow%2Dx%3A%20auto%3B%0Apadding%3A%201em%3B%0A%7D%0Apre%2Er%20%7B%0Abackground%2Dcolor%3A%20%23F5F5F5%3B%0Aborder%2Dcolor%3A%20%23CCCCCC%0A%7D%0A%0Aol%20%7B%0A%0Apadding%2Dleft%3A%200%3B%0A%7D%0Aol%3Eli%20%7B%0A%0Aposition%3A%20relative%3B%0A%0Alist%2Dstyle%3A%20none%3B%0Awidth%3A%2090%25%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%2010px%3B%0Apadding%2Dright%3A%200%3B%0Apadding%2Dleft%3A%20120px%3B%0A%7D%0Aol%3Eli%3Abefore%20%7B%0A%0Acontent%3A%20%22Exercise%20%22%20counter%28li%29%22%2E%22%3B%0A%0Acounter%2Dincrement%3A%20li%3B%0Aposition%3A%20absolute%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0Aleft%3A%20%2D0%2E5px%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aol%20ol%20%7B%0Acounter%2Dreset%3A%20subitem%3B%0A%7D%0Aul%20ul%20%7B%0Awidth%3A%20100%25%3B%0A%7D%0A%2Ebox%20%7B%0Abackground%2Dcolor%3A%20%23a3c586%3B%0Aborder%2Dcolor%3A%20%23CCCCCC%3B%0Acolor%3A%20%23FFFFFF%3B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dradius%3A%204px%3B%0Aoverflow%2Dx%3A%20auto%3B%0Amargin%2Dtop%3A%201em%3B%0Amargin%2Dbottom%3A%201em%3B%0Awidth%3A%2055%25%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A" rel="stylesheet" type="text/css" />
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Lab 15 - Shiny Intro</h1>
+<h4 class="author">Tyler George</h4>
+
+
+<div id="TOC">
+<ul>
+<li><a href="#learning-goals">Learning Goals</a></li>
+<li><a href="#getting-started">Getting Started</a><ul>
+<li><a href="#warm-up">Warm up</a></li>
+</ul></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+</div>
+
+<p>The intention of this lab is to introduce you to shiny interactive web apps through their documentation and have you apply one to your project.</p>
+<p>Find this documentation <a href="https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/">here</a>.</p>
+<div id="learning-goals" class="section level1">
+<h1>Learning Goals</h1>
+<ul>
+<li>Learn basic R Shiny</li>
+<li>Create an R Shiny for your project data</li>
+</ul>
+</div>
+<div id="getting-started" class="section level1">
+<h1>Getting Started</h1>
+<p>Go to the course GitHub organization and locate your lab repo, clone it in RStudio and open the R Markdown document. This is dispersed to your <strong>project group</strong>. Knit the document to make sure it compiles without errors.</p>
+<div id="warm-up" class="section level2">
+<h2>Warm up</h2>
+<p>Let's warm up with some simple exercises. Update the YAML of your R Markdown file with your information, knit, commit, and push your changes. Make sure to commit with a meaningful commit message. Then, go to your repo on GitHub and confirm that your changes are visible in your Rmd <strong>and</strong> md files. If anything is missing, commit and push again.</p>
+</div>
+</div>
+<div id="exercises" class="section level1">
+<h1>Exercises</h1>
+<ol style="list-style-type: decimal">
+<li><p>First we need the package. Call in the &quot;shiny&quot; package. Run Hello Shiny example using runExample(&quot;01_hello&quot;). Which number of bins is &quot;ideal?&quot;</p></li>
+<li><p>Read the <strong>Structure of a Shiny App</strong> section. Run the Hello Shiny Example by defining the ui, server, and then implement them using shinyApp function all in your R console.</p></li>
+</ol>
+<p>Read the <strong>Running an App</strong> section.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Now you are going to create your own basic Shiny App. Create the new directory by using &quot;New Folder&quot; on the right and naming it as instructed. Now you need to create a new script (File -&gt; New File -&gt; New Script). Now save this script, calling it <strong>app.R</strong> in the new folder you just created. You will need to navigate to your project folder and find the folder you created inside of it. Next, as instructed you are going to copy and paste all the contents of the Hello Shiny example into this file. Then save the file.</p></li>
+<li><p>Answer the three questions on this page and then read the remainder of the page.</p></li>
+<li><p>You are welcome to learn more about shiny apps in the difference lessons once you complete this lab, but for now, I want you to skip to Lesson 7. Read through and successfully deploy your Shiny App as a computer-dependent webpage using the runGitHub function.</p></li>
+<li><p>Next. Skip down to the Shinyapps.io section. Click the link to go to the site. Sign in using either your GitHub or Google school accounts. Once you are logged in, skip step 1.</p></li>
+<li><p>Follow the instructions in Step 2.</p></li>
+<li>Run the library command from step 3 first. Then copy the 2nd line making sure that before you click enter in R you change the path. You did it! When it finishes your app should be loaded in a browser.</li>
+</ol>
+<ul>
+<li>Have someone else in your group go to the same url to see your app.</li>
+<li>On the shinyapps.io page click the tab on the left that says &quot;Applications.&quot; Here you can see which of your apps are running and other things. If you click &quot;Running&quot; you should see your app name. Click the gear icon on the right to see some settings. Since we are using the free service your maximum app size is 1gb, and is public.</li>
+</ul>
+<ol start="9" style="list-style-type: decimal">
+<li>Wow that was fun. Next, I want you to try and create a shiny app that works for your project. I suggest you go back to the Shiny lesson page (at the top of this lab) and do one of two things:</li>
+</ol>
+<ul>
+<li>Scroll to the bottom to see the names of the 11 built in examples. Run each one and see if any are visualizations that match what you might want in your project.</li>
+<li>Click &quot;Gallery&quot; at the top of the page. Look through these and see if anything looks fun for your project. Click on it. Next, you can either launch the app or see the code you need on GitHub. Look around the for code that creates it. It may or may not be possible to source the data.</li>
+</ul>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

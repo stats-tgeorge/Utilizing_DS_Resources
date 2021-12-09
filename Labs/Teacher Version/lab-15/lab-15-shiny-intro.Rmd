@@ -1,0 +1,66 @@
+---
+title: "Lab 15 - Shiny Intro"
+author: Tyler George
+output: 
+  tufte::tufte_html:
+    css: ../lab.css
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: yes
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The intention of this lab is to introduce you to shiny interactive web apps through their documentation and have you apply one to your project. 
+
+Find this documentation [here](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/).
+
+# Learning Goals
+- Learn basic R Shiny
+- Create an R Shiny for your project data
+
+# Getting Started
+Go to the course GitHub organization and locate your lab repo, clone it in RStudio and open the R Markdown document. This is dispersed to your **project group**.
+Knit the document to make sure it compiles without errors.
+
+## Warm up 
+Let's warm up with some simple exercises.
+Update the YAML of your R Markdown file with your information, knit, commit, and push your changes.
+Make sure to commit with a meaningful commit message.
+Then, go to your repo on GitHub and confirm that your changes are visible in your Rmd **and** md files.
+If anything is missing, commit and push again.
+
+
+# Exercises
+1. First we need the package. Call in the "shiny" package. Run Hello Shiny example using runExample("01_hello"). Which number of bins is "ideal?"
+
+2. Read the **Structure of a Shiny App** section. Run the Hello Shiny Example by defining the ui, server, and then implement them using shinyApp function all in your R console. 
+
+Read the **Running an App** section. 
+
+3. Now you are going to create your own basic Shiny App. Create the new directory by using "New Folder" on the right and naming it as instructed. Now you need to create a new script (File -> New File -> New Script). Now save this script, calling it **app.R** in the new folder you just created. You will need to navigate to your project folder and find the folder you created inside of it. Next, as instructed you are going to copy and paste all the contents of the Hello Shiny example into this file. Then save the file. 
+
+4. Answer the three questions on this page and then read the remainder of the page.
+
+5. You are welcome to learn more about shiny apps in the difference lessons once you complete this lab, but for now, I want you to skip to Lesson 7. Read through and successfully deploy your Shiny App as a computer-dependent webpage using the runGitHub function.
+
+6. Next. Skip down to the Shinyapps.io section. Click the link to go to the site. Sign in using either your GitHub or Google school accounts. Once you are logged in, skip step 1. 
+
+7. Follow the instructions in Step 2. 
+
+8. Run the library command from step 3 first. Then copy the 2nd line making sure that before you click enter in R you change the path. You did it! When it finishes your app should be loaded in a browser. 
+ - Have someone else in your group go to the same url to see your app.
+ - On the shinyapps.io page click the tab on the left that says "Applications." Here you can see which of your apps are running and other things. If you click "Running" you should see your app name. Click the gear icon on the right to see some settings. Since we are using the free service your maximum app size is 1gb, and is public. 
+
+9. Wow that was fun. Next, I want you to try and create a shiny app that works for your project. I suggest you go back to the Shiny lesson page (at the top of this lab) and do one of two things:
+ - Scroll to the bottom to see the names of the 11 built in examples. Run each one and see if any are visualizations that match what you might want in your project. 
+ - Click "Gallery" at the top of the page. Look through these and see if anything looks fun for your project. Click on it. Next, you can either launch the app or see the code you need on GitHub. Look around the for code that creates it. It may or may not be possible to source the data. 
+
+
+
+
+
+
