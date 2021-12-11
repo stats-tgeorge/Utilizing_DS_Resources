@@ -41,21 +41,19 @@ If anything is missing, commit and push again.
 
 Read the **Running an App** section. 
 
-3. Now you are going to create your own basic Shiny App. Create the new directory by using "New Folder" on the right and naming it as instructed. Now you need to create a new script (File -> New File -> New Script). Now save this script, calling it **app.R** in the new folder you just created. You will need to navigate to your project folder and find the folder you created inside of it. Next, as instructed you are going to copy and paste all the contents of the Hello Shiny example into this file. Then save the file. 
+3. Now you are going to create your own basic Shiny App. Create the new directory by using "New Folder" on the right and naming it as instructed. Now you need to create a new script (File -> New File -> New Script). Now save this script, calling it **app.R**, in the new folder you just created. You will need to navigate to your project folder and find the folder you created inside of it. Next, as instructed, you are going to copy and paste all the contents of the Hello Shiny example into this file. Then save the file. **Note: Now that you have code to run your app, note that if you try and knit your document you will need to add the "eval = F" option into you chunk header.** 
 
 4. Answer the three questions on this page and then read the remainder of the page.
 
-5. You are welcome to learn more about shiny apps in the difference lessons once you complete this lab, but for now, I want you to skip to Lesson 7. Read through and successfully deploy your Shiny App as a computer-dependent webpage using the runGitHub function.
+5. You are welcome to learn more about shiny apps in the difference lessons once you complete this lab, but for now, I want you to skip to Lesson 7. Skip down to the Shinyapps.io section. Click the link to go to the site. Sign in using either your GitHub or Google school accounts. Once you are logged in, skip step 1. 
 
-6. Next. Skip down to the Shinyapps.io section. Click the link to go to the site. Sign in using either your GitHub or Google school accounts. Once you are logged in, skip step 1. 
+6. Follow the instructions in Step 2. 
 
-7. Follow the instructions in Step 2. 
-
-8. Run the library command from step 3 first. Then copy the 2nd line making sure that before you click enter in R you change the path. You did it! When it finishes your app should be loaded in a browser. 
+7. Run the library command from step 3 first. Then copy the 2nd line making sure that before you click enter in R you change the path. You did it! When it finishes your app should be loaded in a browser. 
  - Have someone else in your group go to the same url to see your app.
  - On the shinyapps.io page click the tab on the left that says "Applications." Here you can see which of your apps are running and other things. If you click "Running" you should see your app name. Click the gear icon on the right to see some settings. Since we are using the free service your maximum app size is 1gb, and is public. 
 
-9. Wow that was fun. Next, I want you to try and create a shiny app that works for your project. I suggest you go back to the Shiny lesson page (at the top of this lab) and do one of two things:
+8. Wow that was fun. Next, I want you to try and create a shiny app that works for your project. I suggest you go back to the Shiny lesson page (at the top of this lab) and do one of two things:
  - Scroll to the bottom to see the names of the 11 built in examples. Run each one and see if any are visualizations that match what you might want in your project. 
  - Click "Gallery" at the top of the page. Look through these and see if anything looks fun for your project. Click on it. Next, you can either launch the app or see the code you need on GitHub. Look around the for code that creates it. It may or may not be possible to source the data. 
 
