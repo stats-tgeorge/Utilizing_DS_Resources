@@ -1,0 +1,171 @@
+---
+title: "Lab 16 - tidytext"
+author: "Tyler George   \nBased on Materials from Julia Silge's Workshop [Here](https://github.com/juliasilge/tidytext-tutorial)    \nLab Outline by Mine Çetinkaya-Rundel"
+output: github_document
+---
+
+```{r include=FALSE}
+#knitr::opts_chunk$set(eval = FALSE)
+```
+# Learning goals
+
+-   Learn text mine (text analysis) terminology
+-   Introduction to tidytext
+-   Sentiment analysis
+-   term frequency (tf) and inverse document frequency (idf) (wordlcouds)
+-   Ngrams and network analysis
+
+# Getting started
+
+Go to the course GitHub organization and locate your lab repo, clone it in RStudio and open the R Markdown document.
+Knit the document to make sure it compiles without errors.
+
+## Warm up
+
+Let's warm up with some simple exercises.
+Update the YAML of your R Markdown file with your information, knit, commit, and push your changes.
+Make sure to commit with a meaningful commit message.
+Then, go to your repo on GitHub and confirm that your changes are visible in your Rmd **and** md files.
+If anything is missing, commit and push again.
+
+## Packages
+In addition to `tidyverse` we will be using four other packages today
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tidytext)
+library(genius) #Song Lyrics
+library(wordcloud)# Making wordclouds
+library(DT) 
+```
+
+## Tidytext
+
+- Using tidy data principles can make many text mining tasks easier, more effective, and consistent with tools already in wide use.
+- Learn more at <https://www.tidytextmining.com/>.
+
+## Follow along
+Fill in the blanks as we go along and run the R chunks
+
+**There Is a Light That Never Goes Out** by The Smiths 
+```{r}
+text <- c("Take me out tonight",
+          "Where there's music and there's people",
+          "And they're young and alive",
+          "Driving in your car",
+          "I never never want to go home",
+          "Because I haven't got one",
+          "Anymore")
+
+```
+
+```{r}
+text_df <- tibble(line = 1:7, text = text)
+
+text_df
+```
+
+```{r}
+text_df %>%
+  unnest_tokens(word, text)
+```
+
+#### What is your favorite song?
+(Excluding those with derogatory words)
+
+```{r message=FALSE}
+listening <- read_csv("data/listening.csv")
+listening
+```
+
+#### Looking for commonalities
+
+```{r}
+listening %>%
+  unnest_tokens(word, songs) %>%
+  count(word, sort = TRUE)
+```
+
+#### Stop words
+
+- In computing, stop words are words which are filtered out before or after processing of natural language data (text).
+- They usually refer to the most common words in a language, but there is not a single list of stop words used by all natural language processing tools.
+
+
+#### English stop words
+
+```{r}
+get_stopwords()
+```
+
+
+#### Spanish stop words
+
+```{r}
+get_stopwords(language = "es")
+```
+
+#### Various lexicons
+
+See `?get_stopwords` for more info.
+
+```{r}
+get_stopwords(source = "smart")
+```
+
+#### Back to looking for commonalities
+
+```{r}
+listening %>%
+  unnest_tokens(word, songs) %>%
+  anti_join(stop_words) %>%                           
+  filter(!(word %in% c("1", "2", "3", "4", "5"))) %>% 
+  count(word, sort = TRUE)
+```
+
+#### Top 20 common words in songs
+```{r message=FALSE}
+top20_songs <- listening %>%
+  unnest_tokens(word, songs) %>%
+  anti_join(stop_words) %>%
+  filter(
+    !(word %in% c("1", "2", "3", "4", "5"))
+    ) %>%
+  count(word) %>%
+  top_n(20)
+
+top20_songs %>%
+  arrange(desc(n))
+```
+
+#### Visualizing commonalities: bar chart
+```{r}
+top20_songs %>%
+  ggplot(aes(x = fct_reorder(word, n), y = n)) +
+  geom_col() +
+  labs(x = "Common words", y = "Count") +
+  coord_flip()
+```
+
+#### Visualizing commonalities: wordcloud
+
+```{r}
+set.seed(1234)
+wordcloud(words = top20_songs$word, 
+          freq = top20_songs$n, 
+          colors = brewer.pal(5,"Blues"),
+          random.order = FALSE)
+#Note: You may need to increase the size of your plot area to get this to display properly
+```
+
+🧶 ✅ ⬆️ *If you haven't done so recently, knit, commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+
+
+
+
+
+
+
+
+
+
