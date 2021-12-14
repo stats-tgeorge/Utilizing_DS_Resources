@@ -7,7 +7,7 @@ library(gitcreds)
 org_sitrep(org = "DSC223-FB4-2021")
 
 
-setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
+setwd("G:/My Drive/Cornell College/Cornell Classes/Data Science/DSC223PrepRep")
 
 roster = read.csv('roster.csv')
 
@@ -29,18 +29,18 @@ org_pending('DSC223-FB4-2021')
 # First you need to create a repo out of just the hw/lab you want to disperse
 # Next make it a template
 
-repo_name = "lab-15-shiny-intro"
+repo_name = "lab-16-tidy-text"
 
 repo_set_template(paste0("DSC223-FB4-2021/",repo_name))
 
 repo_is_template(paste0("DSC223-FB4-2021/",repo_name))
 
 # add the yml file for badge
-setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Assignment and Lab Repos")
+setwd("G:/My Drive/Cornell College/Cornell Classes/Data Science/Assignment and Lab Repos")
 
 dir.create(paste0(repo_name,"/.github"))
 dir.create(paste0(repo_name,"/.github/workflows"))
-file.copy("U:/My Drive/Cornell College/Cornell Classes/Data Science/Tech Setup/check_rmd.yml", paste0(repo_name,"/.github/workflows"))
+file.copy("G:/My Drive/Cornell College/Cornell Classes/Data Science/Tech Setup/check_rmd.yml", paste0(repo_name,"/.github/workflows"))
 
 # PUSH
 
