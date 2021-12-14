@@ -1,7 +1,7 @@
 ---
-title: "SAMPLE TAKE HOME EXAM - STUDENT TEMPLATE"
+title: "Exam 2 DSC 223 Fall 2021 Block 4"
 author: "[ENTER NAME HERE]"
-date: "Due: [DUE DATE HERE]"
+date: "Due: 12/14/2021 at 3:00 PM"
 output: 
   github_document: 
     fig_height: 4
@@ -17,6 +17,28 @@ knitr::opts_chunk$set(echo = TRUE)
 
 I, ____________, hereby state that I have not communicated with or gained information in any way from my classmates or anyone other than the Professor or TA during this exam, and that all work is my own.
 
+## Load data
+Complete the function to read the data in from the data folder.
+
+```{r data-load}
+pumpkins <- read.csv('___')
+```
+
+
+### Answer the following about the day, month, and year you were born in (number format). Change the **eval=F** to T. Do not change the **include**.
+```{r sample-data,include = F, eval=F}
+d <-__
+m <-__
+y <- ____
+
+set.seed(d+m+y)
+
+# The data you should be using for the exam:
+model_pumpkins <- pumpkins[sample.int(28065,28065,T),]
+```
+
+You should use this new **model_pumpkins** data for the remainder of the exam. 
+
 ## Load packages
 
 ```{r load-packages, message=FALSE}
@@ -27,21 +49,21 @@ I, ____________, hereby state that I have not communicated with or gained inform
 
 ### Question 1
 
-[Enter code and/or narrative here.]
+[Enter code and narrative here.]
 
 ### Question 2
 
-[Enter code and/or narrative here.]
+[Enter code and narrative here.]
 
 ### Question 3
 
-[Enter code and/or narrative here.]
+[Enter code and narrative here.]
 
-...
+### Question 4
 
-[Add headers for subsequent questions as needed.]
+[Enter code and narrative here.]
 
-### Extra Credit
+### Bonus
 
 [Enter code and narrative here.]
 
