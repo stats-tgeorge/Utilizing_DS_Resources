@@ -9,14 +9,14 @@ library(gert)
 
 
 
-assingment_name = 'hw-1-ind'
+assingment_name = 'exam-02'
 
-setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Student Worked Repos")
+setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Grading/Final Exams")
 
-dir.create(assingment_name)
+#dir.create(assingment_name)
 
 local_repo_clone(
-  repo = org_repos("DSC223-FB4-2021", "hw-1"),
+  repo = org_repos("DSC223-FB4-2021", "exam-02"),
   local_path = assingment_name
 )
 
