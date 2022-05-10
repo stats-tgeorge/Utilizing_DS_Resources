@@ -1,0 +1,54 @@
+---
+title: "Linking Git and R"
+author: "Tyler George"
+date: "11/9/2021"
+output: html_document
+---
+
+---
+title: "Linking Git and R"
+author: "Tyler George"
+date: "11/9/2021"
+output: html_document
+---
+```{r echo=F}
+library(usethis)
+```
+
+# Run this chuck (little green play button on the right)
+```{r ,eval=F}
+usethis::create_github_token()
+```
+
+# You need to save your PAT code.
+Treat this like a password (it shouldn't be shared)
+
+paste PAT here: 
+
+Example: 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
+
+# Run the following and paste in your PAT:
+
+```{r ,eval=F}
+gitcreds::gitcreds_set() #Tells R to save your PAT to your RStudio user
+```
+
+# Run the following:
+```{r ,eval=F}
+usethis::edit_r_environ()
+```
+ 
+
+# Paste the following into this file:
+
+Replace the xx's with your PAT again. 
+
+GITHUB_PAT=xxxxxx
+
+Click save.
+
+This makes it so you only have to do this one time!
+
+Restart your r session (power button symbol on the far right)
+
+You can now exit out of the file ".Renviron"
