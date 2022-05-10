@@ -14,6 +14,8 @@ link-citations: yes
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+NOTE: This lab did not work well. Students reported bouncing back and forth between two sets of instructions confusing. I will be reworking all of this in the future.
+
 The intention of this lab is to introduce you to shiny interactive web apps through their documentation and have you apply one to your project. 
 
 Find this documentation [here](https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/).
