@@ -10,6 +10,7 @@ output:
       highlightLines: true
       highlightStyle: solarized-light
       countIncrementalSlides: false
+      
 ---
 
 
@@ -22,15 +23,15 @@ packageVersion("xaringan")
 library(knitr)
 library(kableExtra)
 library(RefManageR)
-library(bibtex)
 library(tidyverse)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
-           cite.style = "alphabetic",
+           #cite.style = "alphabetic",
            style = "markdown",
            hyperlink = FALSE,
-           dashed = FALSE)
-myBib <- ReadBib("myBib.bib", check = T)
+           dashed = FALSE
+           )
+myBib <- ReadBib("myBib.bib", check = F)
 
 ```
 
@@ -45,30 +46,34 @@ myBib <- ReadBib("myBib.bib", check = T)
 
 # Course Objectives
 - From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control."
- - Data wrangling
- - Utilizing version control + good organization to create reproducible work
- - Building technical kills in R, and RStudio, namely *tidyverse* functions
- - Understanding and learning to consider ethical problems in data science
- - Creating understandable and honest data visualizations
- - Communicating statistical analysis
+- Data wrangling
+- Utilizing version control & good organization to facilitate reproducible work
+- Building technical kills in R, and RStudio, namely *tidyverse* functions
+- Understanding and learning to consider ethical problems in data science
+- Creating understandable and honest data visualizations
+- Communicating statistical analysis
 
 ---
 
 # Utilized Resources
 
 - [Data Science in a Box](https://datasciencebox.org/index.html) by Mine Chetinkaya-Rundel
-- [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College including work by Casey Pattanayak, Donna Gan, Tersa Li, Kat Liang, and Kily Wong
+- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College `r Cite(myBib,"Pattanayak")`
 - Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
-- Many R packages used in code but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
+- Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
 ---
 
-# My Classroom
-- Only 15 students
-- This course has a pre-requisite of *either* introductory statistics or introductory computer science (python) (almost all of these students had taken both). 
+# The Class
+.pull-left[
+- This course has a pre-requisite of *either* introductory statistics or introductory computer science (python) 
+- Total of 15 students
+]
 
-```{r echo=FALSE, out.width="30%", fig.align="center"}
+.pull-right[
+```{r echo=FALSE, out.width="90%", fig.align="center"}
 knitr::include_graphics("img/Classroom_Layout.png")
 ```
+]
 
 ---
 
@@ -79,7 +84,10 @@ knitr::include_graphics("img/Classroom_Layout.png")
 knitr::include_graphics("img/DailyFlow.png")
 ```
 
-- After class each day they completed 1 homework, read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/) or ethics realated materials discussed later
+- After the afternoon class each day students were assigned:
+ - One R homework, 
+ - Read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/)
+ - Read ethics related materials (discussed later)
 
 ---
 
@@ -104,46 +112,46 @@ sch <- read.csv('DSC_223_Course_Schedule.csv',header =F)
 
 ```
 
-
-
 ---
 
 # Data Science Ethics
 - Data Science in  Box offers a collection of videos of speakers discussing topics such as algorithm bias and miss-leading visualizations
-- This was used in combination to the ethics assignments at [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) [@Pattanayak]
-- A more thorough approach will be used in the future. Such as adding modules from [@Beckman2022]
+- This was used in combination to the data ethics assignments from [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) `r Cite(myBib,"Pattanayak")`
+- A more thorough approach will be used in the future. Such as adding modules from *Integrating Data Science Ethics Into an Undergraduate Major: A Case Study* by `r Citet(myBib,"Beckman2022")`.
 
 ---
 
 # Technologies
-- Learning Management Software Moodle
-- RStudio Server
+- Learning Management System (LMS) - Moodle
+- [RStudio Server]("https://www.rstudio.com/products/rstudio/download-server/") (new implementation for this course, see `r Citet(myBib,"Cetinkaya-Rundel2018")` for a discussion on this infrastructure) 
+ - A combination of [RMarkdown](https://rmarkdown.rstudio.com/) and R scripts were used
 - Git and Github. 
- - Students used Git through the RStudio panel
- - I used Github desktop application too
-- R packages - primarily within *tidyverse* 
- - *ghclass* [@Rundel]
+ - Students used Git through the RStudio panel within an R project
+ - I also used Github desktop application for some convenience such as pulling one students current work to help them
+- R packages - primarily within the *tidyverse* 
+ - *ghclass* `r Citet(myBib,"Rundel")` for distributing and collecting repositories
  
 ---
 
 # Teaching Pedagogies
-- Collaborative learning
-- Group of students would have to work together to solve a few exercises on the lab
- - One student would pull the lab from Github and would be connected to the table TV
- - Other students would have to work with the student with the current version to solve a few problems.
- - That student would then push and the next student would pull the now current version. 
-  - This was deviated from for projects and examples to simulate merge conflicts
-- Consistent syntax to reduce cognitive load
-- Version control to lead to reproducible work 
+- Collaborative learning `r Cite(myBib,"Cary")`
+```{r echo=FALSE, out.width="50%", fig.align="left"}
+knitr::include_graphics("img/LabCycle.png")
+```
+*Note: This was deviated from for projects and examples to simulate merge conflicts*
+
+- Using tidyverse `r Cite(myBib,"Cetinkaya-Rundel2022")`
+
+- Version control to lead to reproducible work `r Cite(myBib,"Beckman2021")`
 
 ---
 
 # Learning the Bare Necessities
-- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages used.
+- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions used.
 - What did I *need* to learn to teach this class?
  - Basic Git functions such as push,pulling, and handling merge conflicts in RStudio
  - *ghclass* R package made much of the Git/Github learning much smoother
- - RStudio server managment required learning some basic Linux commands. See XXX
+ - RStudio server implementation and management required learning some basic Linux commands. See [here]() for the command I ended up needing
  - Learning the Xaringan R package to modify slides (now I'm using it for this!)
  
 ---

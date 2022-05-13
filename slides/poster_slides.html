@@ -45,28 +45,32 @@ class: center, middle, inverse, title-slide
 
 # Course Objectives
 - From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control."
- - Data wrangling
- - Utilizing version control + good organization to create reproducible work
- - Building technical kills in R, and RStudio, namely *tidyverse* functions
- - Understanding and learning to consider ethical problems in data science
- - Creating understandable and honest data visualizations
- - Communicating statistical analysis
+- Data wrangling
+- Utilizing version control &amp; good organization to facilitate reproducible work
+- Building technical kills in R, and RStudio, namely *tidyverse* functions
+- Understanding and learning to consider ethical problems in data science
+- Creating understandable and honest data visualizations
+- Communicating statistical analysis
 
 ---
 
 # Utilized Resources
 
 - [Data Science in a Box](https://datasciencebox.org/index.html) by Mine Chetinkaya-Rundel
-- [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College including work by Casey Pattanayak, Donna Gan, Tersa Li, Kat Liang, and Kily Wong
+- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College (Pattanayak, Gan, Li, Liang, and Wong, 2022)
 - Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
-- Many R packages used in code but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
+- Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
 ---
 
-# My Classroom
-- Only 15 students
-- This course has a pre-requisite of *either* introductory statistics or introductory computer science (python) (almost all of these students had taken both). 
+# The Class
+.pull-left[
+- This course has a pre-requisite of *either* introductory statistics or introductory computer science (python) 
+- Total of 15 students
+]
 
-&lt;img src="img/Classroom_Layout.png" width="30%" style="display: block; margin: auto;" /&gt;
+.pull-right[
+&lt;img src="img/Classroom_Layout.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
 
 ---
 
@@ -75,7 +79,10 @@ class: center, middle, inverse, title-slide
 - Typical class flow:
 &lt;img src="img/DailyFlow.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
 
-- After class each day they completed 1 homework, read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/) or ethics realated materials discussed later
+- After the afternoon class each day students were assigned:
+ - One R homework, 
+ - Read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/)
+ - Read ethics related materials (discussed later)
 
 ---
 
@@ -187,46 +194,44 @@ class: center, middle, inverse, title-slide
 &lt;/tfoot&gt;
 &lt;/table&gt;
 
-
-
 ---
 
 # Data Science Ethics
 - Data Science in  Box offers a collection of videos of speakers discussing topics such as algorithm bias and miss-leading visualizations
-- This was used in combination to the ethics assignments at [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) [@Pattanayak]
-- A more thorough approach will be used in the future. Such as adding modules from [@Beckman2022]
+- This was used in combination to the data ethics assignments from [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) (Pattanayak, Gan, Li, et al., 2022)
+- A more thorough approach will be used in the future. Such as adding modules from *Integrating Data Science Ethics Into an Undergraduate Major: A Case Study* by Baumer, Garcia, Kim, Kinnaird, and Ott (2022).
 
 ---
 
 # Technologies
-- Learning Management Software Moodle
-- RStudio Server
+- Learning Management System (LMS) - Moodle
+- [RStudio Server]("https://www.rstudio.com/products/rstudio/download-server/") (new implementation for this course, see Çetinkaya-Rundel and Rundel (2018) for a discussion on this infrastructure) 
+ - A combination of [RMarkdown](https://rmarkdown.rstudio.com/) and R scripts were used
 - Git and Github. 
- - Students used Git through the RStudio panel
- - I used Github desktop application too
-- R packages - primarily within *tidyverse* 
- - *ghclass* [@Rundel]
+ - Students used Git through the RStudio panel within an R project
+ - I also used Github desktop application for some convenience such as pulling one students current work to help them
+- R packages - primarily within the *tidyverse* 
+ - *ghclass* Rundel and Çetinkaya-Rundel (2022) for distributing and collecting repositories
  
 ---
 
 # Teaching Pedagogies
-- Collaborative learning
-- Group of students would have to work together to solve a few exercises on the lab
- - One student would pull the lab from Github and would be connected to the table TV
- - Other students would have to work with the student with the current version to solve a few problems.
- - That student would then push and the next student would pull the now current version. 
-  - This was deviated from for projects and examples to simulate merge conflicts
-- Consistent syntax to reduce cognitive load
-- Version control to lead to reproducible work 
+- Collaborative learning (Roseth, Garfield, and Ben-Zvi, 2008)
+&lt;img src="img/LabCycle.png" width="50%" style="display: block; margin: auto auto auto 0;" /&gt;
+*Note: This was deviated from for projects and examples to simulate merge conflicts*
+
+- Using tidyverse (Ã‡etinkaya-Rundel, Hardin, Baumer, McNamara, Horton, and Rundel, 2021)
+
+- Version control to lead to reproducible work (Beckman, Ã‡etinkaya-Rundel, Horton, Rundel, Sullivan, and Tackett, 2021)
 
 ---
 
 # Learning the Bare Necessities
-- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages used.
+- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions used.
 - What did I *need* to learn to teach this class?
  - Basic Git functions such as push,pulling, and handling merge conflicts in RStudio
  - *ghclass* R package made much of the Git/Github learning much smoother
- - RStudio server managment required learning some basic Linux commands. See XXX
+ - RStudio server implementation and management required learning some basic Linux commands. See [here]() for the command I ended up needing
  - Learning the Xaringan R package to modify slides (now I'm using it for this!)
  
 ---
@@ -241,6 +246,13 @@ class: center, middle, inverse, title-slide
 ---
 
 # References
+
+Ã‡etinkaya-Rundel, M., J. Hardin, B. S. Baumer, et al.
+(2021). _An educator's perspective of the tidyverse_.
+DOI:
+[10.48550/ARXIV.2108.03510](https://doi.org/10.48550%2FARXIV.2108.03510).
+URL:
+[https://arxiv.org/abs/2108.03510](https://arxiv.org/abs/2108.03510).
 
 Baumer, B. S., R. L. Garcia, A. Y. Kim, et al. (2022).
 "Integrating Data Science Ethics Into an Undergraduate
@@ -265,6 +277,10 @@ eprint: https://doi.org/10.1080/10691898.2020.1848485 .
 URL: [ https://doi.org/10.1080/10691898.2020.1848485 ](
 https://doi.org/10.1080/10691898.2020.1848485 ).
 
+---
+
+# References
+
 Çetinkaya-Rundel, M. and C. Rundel (2018).
 "Infrastructure and tools for teaching computing
 throughout the statistical curriculum". In: _The American
@@ -275,10 +291,6 @@ https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1397549.
 URL:
 [https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1397549](https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1397549).
 
----
-
-# References
-
 Mine~Çetinkaya-Rundel (2021). _Data Science in a Box_.
 available at https://www.datasciencebox.org.
 
@@ -286,6 +298,14 @@ Pattanayak, C., D. Gan, T. Li, et al. (2022).
 _Quantitative Analysis Institute Online Resources_.
 Wellesley College.
 https://sites.google.com/wellesley.edu/qai-online-resources/home?authuser=0.
+
+Roseth, C. J., J. B. Garfield, and D. Ben-Zvi (2008).
+"Collaboration in Learning and Teaching Statistics". In:
+_Journal of Statistics Education_ 16.1, p. null. DOI:
+[10.1080/10691898.2008.11889557](https://doi.org/10.1080%2F10691898.2008.11889557).
+eprint: https://doi.org/10.1080/10691898.2008.11889557 .
+URL:
+[https://doi.org/10.1080/10691898.2008.11889557](https://doi.org/10.1080/10691898.2008.11889557).
 
 RStudio (2020). _Learn Shiny_.
 https://shiny.rstudio.com/tutorial/.
