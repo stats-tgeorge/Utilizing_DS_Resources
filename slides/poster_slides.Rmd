@@ -162,6 +162,7 @@ knitr::include_graphics("img/LabCycle.png")
 - Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick but still giving feedback to students
 - Less inference and more data wrangling
 - Higher project expectations
+- Github actions
 
 ---
 
