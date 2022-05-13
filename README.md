@@ -1,18 +1,13 @@
-# STA 223 Introduction to Data Science
-## Fall 2021 Block 4
-## Cornell College
-## Prep Example Repository
-## Presenting at eCots 2022
+# eCots 2022 Presentation "Utilizing Open Source Resources to Teach Introductory Data Science"
+## Class Example: STA 223 Introduction to Data Science - Fall 2021 Block 4 - Cornell College
 
-[Slides](https://stats-tgeorge.github.io/Cornell-R-Workshop-2022/slides/Cornell_R_WS_2022.html#1)
+[Slides](https://stats-tgeorge.github.io/DSC223_Fall2022_CornellCollege/slides/poster_slides.html)
 
 # Description
-
-This faculty workshop is to introduce Cornell College faculty to R (primarily tidyverse), RStudio, and the RStudioServer implementation on Cornell's campus. Lastly, faculty will get to practice some basic data manipulation with dplyr functions, webscraping with selector gadget, and basic text analysis. 
 
 
 ## Sources
 
-These are mostly modified materials from Data Science in a Box by Mine Çetinkaya-Rundel. 
+These are mostly modified materials from Data Science in a Box by Mine Ã‡etinkaya-Rundel. 
 
 Data Science in a Box by Mine Cetinkaya-Rundel [here](https://datasciencebox.org/)
