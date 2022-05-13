@@ -139,23 +139,26 @@ sch <- read.csv('DSC_223_Course_Schedule.csv',header =F)
 knitr::include_graphics("img/LabCycle.png")
 ```
 *Note: This was deviated from for projects and examples to simulate merge conflicts*
-
 - Using tidyverse `r Cite(myBib,"Cetinkaya-Rundel2022")`
-
 - Version control to lead to reproducible work `r Cite(myBib,"Beckman2021")`
 
 ---
 
 # Learning the Bare Necessities
-- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions used.
+- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions
 - What did I *need* to learn to teach this class?
- - Basic Git functions such as push,pulling, and handling merge conflicts in RStudio
- - *ghclass* R package made much of the Git/Github learning much smoother
+ - Git and Github: Basic Git functions such as push,pulling, and handling merge conflicts in RStudio
+ - *ghclass* R package made much of the Git/Github learning much smoother. See the R script I created [here]()
  - RStudio server implementation and management required learning some basic Linux commands. See [here]() for the command I ended up needing
  - Learning the Xaringan R package to modify slides (now I'm using it for this!)
+  - I converted these to PDFS. See my simple script [here](). I will host these using Github pages next time. 
  
 ---
 
+# Student Comments
+- 
+
+---
 # Future Updates
 - Expanding the ethics discussion in the course
  - I will be working with a Cornell College faculty in Philosophy this summer.
