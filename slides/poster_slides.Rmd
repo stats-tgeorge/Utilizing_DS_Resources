@@ -38,12 +38,6 @@ Bib <- ReadBib("Bib.bib", check = F)
 
 ```
 
-# Acknowledgments
-
-Dr. [Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
-
----
-
 # About Cornell College
 
 - Small liberal arts college of about 1000 students
@@ -96,7 +90,7 @@ knitr::include_graphics("img/DailyFlow.png")
 - After the afternoon class each day students were assigned:
  - One R homework, 
  - Read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/)
- - Read ethics related materials (discussed later)
+ - Read ethics related materials
 
 ---
 
@@ -121,12 +115,6 @@ sch <- read.csv('DSC_223_Course_Schedule.csv',header =F)
 
 ```
 
----
-
-# Data Science Ethics
-- Data Science in  Box offers a collection of videos of speakers discussing topics such as algorithm bias and miss-leading visualizations
-- Data ethics assignments from [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) `r Cite(Bib,"Pattanayak")`
-- A more thorough approach will be used in the future. Such as, adding modules from *Integrating Data Science Ethics Into an Undergraduate Major: A Case Study* by `r Citet(Bib,"Beckman2022")`.
 
 ---
 
@@ -188,6 +176,11 @@ to free up more space for application exercises."
 - Github actions
 - Rethinking of exams. The estimated time required was way off. 
 
+---
+
+# Acknowledgments
+
+Dr. [Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
 
 ---
 
@@ -222,6 +215,7 @@ PrintBibliography(Bib,start =7,end = 10)
 PrintBibliography(Bib,start =11)
 ```
 
----
 
+
+---
 # Thank You!
