@@ -31,7 +31,7 @@ BibOptions(check.entries = FALSE,
            hyperlink = FALSE,
            dashed = FALSE
            )
-myBib <- ReadBib("myBib.bib", check = F)
+Bib <- ReadBib("Bib.bib", check = F)
 
 ```
 
@@ -58,7 +58,7 @@ myBib <- ReadBib("myBib.bib", check = F)
 # Utilized Resources
 
 - [Data Science in a Box](https://datasciencebox.org/index.html) by Mine Chetinkaya-Rundel
-- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College `r Cite(myBib,"Pattanayak")`
+- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College `r Cite(Bib,"Pattanayak")`
 - Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
 - Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
 ---
@@ -116,31 +116,31 @@ sch <- read.csv('DSC_223_Course_Schedule.csv',header =F)
 
 # Data Science Ethics
 - Data Science in  Box offers a collection of videos of speakers discussing topics such as algorithm bias and miss-leading visualizations
-- Data ethics assignments from [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) `r Cite(myBib,"Pattanayak")`
-- A more thorough approach will be used in the future. Such as adding modules from *Integrating Data Science Ethics Into an Undergraduate Major: A Case Study* by `r Citet(myBib,"Beckman2022")`.
+- Data ethics assignments from [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) `r Cite(Bib,"Pattanayak")`
+- A more thorough approach will be used in the future. Such as, adding modules from *Integrating Data Science Ethics Into an Undergraduate Major: A Case Study* by `r Citet(Bib,"Beckman2022")`.
 
 ---
 
 # Technologies
 - Learning Management System (LMS) - Moodle
-- [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/) (new implementation for this course, see `r Citet(myBib,"Cetinkaya-Rundel2018")` for a discussion on infrastructure) 
+- [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/) (new implementation for this course, see `r Citet(Bib,"Cetinkaya-Rundel2018")` for a discussion on infrastructure) 
  - A combination of [RMarkdown](https://rmarkdown.rstudio.com/) and R scripts were used
 - Git and Github. 
  - Students used Git through the RStudio panel within an R project
  - I also used Github desktop application for some convenience such as pulling one students current work to help them
 - R packages - primarily within the *tidyverse* 
- - [*ghclass*](https://rundel.github.io/ghclass/) `r Cite(myBib,"Rundel")` for distributing and collecting repositories
+ - [*ghclass*](https://rundel.github.io/ghclass/)  for distributing and collecting repositories `r Cite(Bib,"Rundel")`.
  
 ---
 
 # Teaching Pedagogies
-- Collaborative learning `r Cite(myBib,"Cary")`
+- Collaborative learning `r Cite(Bib,"Cary")`
 ```{r echo=FALSE, out.width="50%", fig.align="left"}
 knitr::include_graphics("img/LabCycle.png")
 ```
 *Note: This was deviated from for projects and examples to simulate merge conflicts*
-- Using tidyverse `r Cite(myBib,"Cetinkaya-Rundel2022")`
-- Version control to lead to reproducible work `r Cite(myBib,"Beckman2021")`
+- Using tidyverse `r Cite(Bib,"Cetinkaya-Rundel2022")`
+- Version control to lead to reproducible work `r Cite(Bib,"Beckman2021")`
 
 ---
 
@@ -172,8 +172,8 @@ knitr::include_graphics("img/LabCycle.png")
 # References
 
 ```{r refs, echo=FALSE, results="asis"}
-NoCite(myBib,"*")
-PrintBibliography(myBib,start =1,end=3)
+NoCite(Bib,"*")
+PrintBibliography(Bib,start =1,end=3)
 ```
 
 ---
@@ -181,7 +181,7 @@ PrintBibliography(myBib,start =1,end=3)
 # References
 
 ```{r refs2, echo=FALSE, results="asis"}
-PrintBibliography(myBib,start =4)
+PrintBibliography(Bib,start =4)
 ```
 
 ---
