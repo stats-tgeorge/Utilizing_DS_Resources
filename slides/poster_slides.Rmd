@@ -1,6 +1,9 @@
 ---
 title: "Utilizing Open Source Resources to Teach Introductory Data Science"
-author: "Tyler George"
+subtitle: "eCOTS 2022"
+author: "Dr. Tyler George"
+institute: "Cornell College | Dept. of Mathematics and Statistics"
+date: "May 16, 2022"
 output:
   xaringan::moon_reader:
     css: ["../course-materials/xaringan-themer.css","../course-materials/setup.css"]
@@ -34,6 +37,12 @@ BibOptions(check.entries = FALSE,
 Bib <- ReadBib("Bib.bib", check = F)
 
 ```
+
+# Acknowledgments
+
+[Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
+
+---
 
 # About Cornell College
 
@@ -148,24 +157,37 @@ knitr::include_graphics("img/LabCycle.png")
 - I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions
 - What did I *need* to learn to teach this class?
  - Git and Github: Basic Git functions such as push,pulling, and handling merge conflicts in RStudio
- - *ghclass* R package made much of the Git/Github learning much smoother. See the R script I created [here]()
- - RStudio server implementation and management required learning some basic Linux commands. See [here]() for the command I ended up needing
+ - *ghclass* R package made much of the Git/Github learning much smoother. See the R script I created [here](https://github.com/stats-tgeorge/Utilizing_DS_Resources/tree/main/course-materials/ghclass-scripts)
+ - RStudio server implementation and management required learning some basic Linux commands. See [here](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Cluster%20Info%20and%20Commands.docx) for the commands I ended up needing
  - Learning the Xaringan R package to modify slides (now I'm using it for this!)
-  - I converted these to PDFS. See my simple script [here](). I will host these using Github pages next time. 
+  - I converted the notes to pdf's. See my simple script [here](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Notes/convertnotestopdf.R). I will host these using Github pages next time. 
  
 ---
 
 # Student Comments
-- 
+- "I enjoy working with my group on the project, although it did take countless hours outside of the classroom I enjoyed it a lot and felt accomplished after presenting."
+
+-   "Working on labs and application exercises were beneficial for me. After completing those I could refer back to them which helped a lot. When working alone I often would get stuck on a exercise but when working in groups we were able to put our heads together and solve the problems. I really enjoyed that."
+
+- "There were far too many notes in this class."
+
+- "Going over the notes are necessary but I thought the length of the slides were way too long. It was hard to stay engaged the whole time when going
+over the notes because I was not using the code in r I was just seeing the results on the powerpoint. I think the notes could be trimmed down some
+to free up more space for application exercises."
+
+
 
 ---
 # Future Updates
 - Expanding the ethics discussion in the course
  - I will be working with a Cornell College faculty in Philosophy this summer.
-- Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick but still giving feedback to students
-- Less inference and more data wrangling
+ - Using some modules from `r Citep(Bib,"Beckman2022")`
+- Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick while giving useful feedback to students `r Cite(Bib,"Federica")`
+- Less statistical inference and more data wrangling
 - Higher project expectations
 - Github actions
+- Rethinking of exams. The estimated time required was way off. 
+
 
 ---
 
@@ -181,10 +203,25 @@ PrintBibliography(Bib,start =1,end=3)
 # References
 
 ```{r refs2, echo=FALSE, results="asis"}
-PrintBibliography(Bib,start =4)
+PrintBibliography(Bib,start =4,end=6)
+```
+
+---
+
+# References
+
+```{r refs3, echo=FALSE, results="asis"}
+PrintBibliography(Bib,start =7,end = 10)
+```
+
+---
+
+# References
+
+```{r refs4, echo=FALSE, results="asis"}
+PrintBibliography(Bib,start =11)
 ```
 
 ---
 
 # Thank You!
-- ADD Gradetools reference
