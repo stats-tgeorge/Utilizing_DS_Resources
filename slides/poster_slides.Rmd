@@ -40,7 +40,7 @@ Bib <- ReadBib("Bib.bib", check = F)
 
 # Acknowledgments
 
-[Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
+Dr. [Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
 
 ---
 
