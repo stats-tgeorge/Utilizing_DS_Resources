@@ -3,7 +3,7 @@ title: "Utilizing Open Source Resources to Teach Introductory Data Science"
 author: "Tyler George"
 output:
   xaringan::moon_reader:
-    css: ["../xaringan-themer.css","../setup.css"]
+    css: ["../course-materials/xaringan-themer.css","../course-materials/setup.css"]
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -14,7 +14,7 @@ output:
 ---
 
 
-```{r child = "../setup.Rmd"}
+```{r child = "../course-materials/setup.Rmd"}
 ```
 
 ```{r packages, message=FALSE, warning=FALSE, include=FALSE}
