@@ -1,6 +1,6 @@
 library(xaringanBuilder)
 
-setwd("U:/My Drive/Cornell College/Cornell Classes/Data Science/Notes/mod-u4-d09-CV")
+setwd("Your directory")
 
 slide_name = "mod-u4-d09-CV"
 
