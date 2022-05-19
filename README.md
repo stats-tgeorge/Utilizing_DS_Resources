@@ -1,5 +1,5 @@
 ---
-bibliography: slides/Bib.bib
+bibliography: Bib.bib
 nocite: "@*"
 ---
 
