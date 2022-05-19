@@ -1,6 +1,6 @@
 # eCOTS 2022 Virtual Poster "Utilizing Open Source Resources to Teach Introductory Data Science" by Tyler George
 
-## Most materils are from Data Science in a Box by Mine Cetinkaya-Rundel [here](https://datasciencebox.org/) 
+## Most materials are from Data Science in a Box by Mine Cetinkaya-Rundel [here](https://datasciencebox.org/) 
 ## Class Example: STA 223 Introduction to Data Science - Fall 2021 Block 4 - Cornell College
 
 [Slides]( https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides/poster_slides.html)
