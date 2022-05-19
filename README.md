@@ -1,6 +1,6 @@
 ## eCOTS 2022 Virtual Poster "Utilizing Open Source Resources to Teach Introductory Data Science" by Tyler George
 
-### Most materials are from Data Science in a Box by Mine Cetinkaya-Rundel [here](https://datasciencebox.org/) 
+### Most materials are from Data Science in a Box by Mine Çetinkaya-Rundel [here](https://datasciencebox.org/) 
 
 [Slides]( https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides/poster_slides.html)
 
@@ -11,7 +11,8 @@ This repository is for a virtual poster at eCOTS 2022 "Utilizing Open Source Res
 
 ### References
 
-Data Science in a Box by Mine Cetinkaya-Rundel [here](https://datasciencebox.org/) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+Data Science in a Box by Mine Çetinkaya-Rundel [here](https://datasciencebox.org/) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
 
 ### Corrections
 
