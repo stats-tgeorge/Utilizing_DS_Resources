@@ -1,8 +1,3 @@
----
-bibliography: Bib.bib
-nocite: "@*"
----
-
 ## eCOTS 2022 Virtual Poster "Utilizing Open Source Resources to Teach Introductory Data Science" by Tyler George
 
 ### Most materials are from *Data Science in a Box* by Mine Çetinkaya-Rundel [here](https://datasciencebox.org/) 
@@ -20,3 +15,5 @@ This repository is for a virtual poster at eCOTS 2022 "Utilizing Open Source Res
 If you see mistakes or want to suggest changes, please create an issue on this source repository.
 
 ### References
+
+{% bibliography --cited --file slides/Bib.bib  %}
