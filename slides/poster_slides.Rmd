@@ -60,7 +60,7 @@ Bib <- ReadBib("Bib.bib", check = F)
 
 # Utilized Resources
 
-- [Data Science in a Box](https://datasciencebox.org/index.html) by Mine Chetinkaya-Rundel
+- [Data Science in a Box](https://datasciencebox.org/index.html) by Mine `r Citet(Bib,"Cetinkaya-Rundel")`
 - Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College `r Cite(Bib,"Pattanayak")`
 - Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
 - Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
