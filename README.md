@@ -1,4 +1,7 @@
-## useR! 2022 & eCOTS 2022 Virtual Poster "Utilizing Open Source Resources to Teach Introductory Data Science" by Tyler George
+# Virtual Poster "Utilizing Open Source Resources to Teach Introductory Data Science"
+
+## useR! 2022 
+## eCOTS 2022 
 
 ### Most materials are from Data Science in a Box by Mine Çetinkaya-Rundel [here](https://datasciencebox.org/) 
 
