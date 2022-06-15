@@ -1,10 +1,9 @@
 # Utilizing Open Source Resources to Teach Introductory Data Science
-### Virtual Poster
-### useR! 2022 
-### eCOTS 2022 
+### Virtual Poster Presented at *useR! 2022* abd *eCOTS 2022* 
 
-### [Slides](https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides/poster_slides.html)
-### Author: Dr. Tyler George
+### [Poster](https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides/poster_slides.html)
+
+#### Author: Dr. Tyler George
 
 
 
