@@ -2,6 +2,7 @@
 ### Virtual Poster Presented at *useR! 2022* and *eCOTS 2022* 
 
 ### Click [HERE](https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides/poster_slides.html) for the poster
+### Click [HERE](https://www.causeweb.org/cause/ecots/ecots22/program/posters/th-02) for a recorded elevator pitch for eCOTS 2022. 
 #### Author: Dr. Tyler George
 
 ### Most materials are from Data Science in a Box by Mine Çetinkaya-Rundel [here](https://datasciencebox.org/). Data Science in a Box is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
