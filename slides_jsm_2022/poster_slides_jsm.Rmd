@@ -1,18 +1,22 @@
 ---
 title: "Utilizing Open Source Resources to Teach Introductory Data Science"
 subtitle: "JSM 2022"
-author: "Dr. Tyler George"
+author: "Dr. Tyler George\nhttps://bit.ly/3zvy8L6"
 institute: "Cornell College | Dept. of Mathematics and Statistics"
 date: "Auguest 7th, 2022"
+background-image: CClogo_reversed.png
 output:
   xaringan::moon_reader:
     css: ["../course-materials/xaringan-themer.css","../course-materials/setup.css"]
     lib_dir: libs
+    seal: false
+    footer: These slides available at https://bit.ly/3zvy8L6
     nature:
       ratio: "16:9"
       highlightLines: true
       highlightStyle: solarized-light
-      countIncrementalSlides: false
+      countIncrementalSlides: true
+      titleSlideClass: [bottom,left]
       
 ---
 
@@ -20,9 +24,12 @@ output:
 ```{r child = "../course-materials/setup.Rmd"}
 ```
 
-```{r packages, message=FALSE, warning=FALSE, include=FALSE}
+```{r packages_1, message=FALSE, warning=FALSE, include=T,echo=F}
+use_logo("img/CClogo_Reversed.png",width="300px",
+         position = css_position(right=0,bottom = 0))
+```
 
-packageVersion("xaringan")
+```{r packages_2, message=FALSE, warning=FALSE, include=F}
 library(knitr)
 library(kableExtra)
 library(RefManageR)
@@ -38,25 +45,39 @@ Bib <- ReadBib("../Bib.bib", check = F)
 
 ```
 
+.center[
+# Utilizing Open Source Resources to Teach Introductory Data Science
+
+### Tyler George
+#### Cornell College
+
+#### Joint Statistical Meetings 2022
+
+##### Slides: [bit.ly/3zvy8L6](https://bit.ly/3zvy8L6)
+]
+
+---
+
 # About Cornell College
 
 - Small liberal arts college of about 1000 students
 - One-Course-at-A-Time block schedule 
  - Each class occurs over 3.5 weeks including 18 days of 4 hours of instructional time and three weekends
-- New majors in Applied Statistics and Data Science
+- **New majors in Applied Statistics and Data Science**
+
+<!-- --- -->
+
+<!-- # Course Objectives -->
+<!-- - From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control." -->
+<!-- - Data wrangling -->
+<!-- - Utilizing version control & good organization to facilitate reproducible work -->
+<!-- - Building technical skills in R, and RStudio, namely *tidyverse* functions -->
+<!-- - Understanding and learning to consider ethical problems in data science -->
+<!-- - Creating understandable and honest data visualizations -->
+<!-- - Communicating statistical analysis -->
 
 ---
 
-# Course Objectives
-- From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control."
-- Data wrangling
-- Utilizing version control & good organization to facilitate reproducible work
-- Building technical skills in R, and RStudio, namely *tidyverse* functions
-- Understanding and learning to consider ethical problems in data science
-- Creating understandable and honest data visualizations
-- Communicating statistical analysis
-
----
 
 # Utilized Resources
 
@@ -92,28 +113,28 @@ knitr::include_graphics("img/DailyFlow.png")
  - Read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/)
  - Read ethics related materials
 
----
+<!-- --- -->
 
-# Course Schedule
-```{r schedule,echo=F}
-sch <- read.csv('DSC_223_Course_Schedule.csv',header =F) 
-  sch %>% slice(1:9) %>%
-  kbl(col.names = c("Day","Topics Covered"))%>%
-  kable_styling(font_size = 20)%>%
-  footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs')
+<!-- # Course Schedule -->
+<!-- ```{r schedule,echo=F} -->
+<!-- sch <- read.csv('DSC_223_Course_Schedule.csv',header =F)  -->
+<!--   sch %>% slice(1:9) %>% -->
+<!--   kbl(col.names = c("Day","Topics Covered"))%>% -->
+<!--   kable_styling(font_size = 20)%>% -->
+<!--   footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs') -->
 
-```
+<!-- ``` -->
 
----
+<!-- --- -->
 
-# Course Schedule
-```{r schedule2,echo=F}
-  sch %>% slice(10:18) %>%
-  kbl(col.names = c("Day","Topics Covered"))%>%
-  kable_styling(font_size = 20)%>%
-  footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs')
+<!-- # Course Schedule -->
+<!-- ```{r schedule2,echo=F} -->
+<!--   sch %>% slice(10:18) %>% -->
+<!--   kbl(col.names = c("Day","Topics Covered"))%>% -->
+<!--   kable_styling(font_size = 20)%>% -->
+<!--   footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs') -->
 
-```
+<!-- ``` -->
 
 
 ---
@@ -167,8 +188,8 @@ to free up more space for application exercises."
 
 ---
 # Future Updates
-- Expanding the ethics discussion in the course
- - I will be working with a Cornell College faculty in Philosophy this summer.
+- Expanding the ethics integration in the course
+ - I am working with a Cornell College faculty, Dr. Megan Altman, to 
  - Using some modules from `r Citep(Bib,"Beckman2022")`
 - Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick while giving useful feedback to students `r Cite(Bib,"Federica")`
 - Less statistical inference and more data wrangling

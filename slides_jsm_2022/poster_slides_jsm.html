@@ -3,65 +3,92 @@
   <head>
     <title>Utilizing Open Source Resources to Teach Introductory Data Science</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Dr. Tyler George" />
+    <meta name="author" content="Dr. Tyler George https://bit.ly/3zvy8L6" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script src="libs/kePrint/kePrint.js"></script>
-    <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="../course-materials/xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="../course-materials/setup.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
 
-.title[
+
+
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 300px;
+height: 128px;
+z-index: 0;
+background-image: url(img/CClogo_Reversed.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+right:0;bottom:0;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+.center[
 # Utilizing Open Source Resources to Teach Introductory Data Science
-]
-.subtitle[
-## JSM 2022
-]
-.author[
-### Dr. Tyler George
-]
-.institute[
-### Cornell College | Dept. of Mathematics and Statistics
-]
-.date[
-### Auguest 7th, 2022
+
+### Tyler George
+#### Cornell College
+
+#### Joint Statistical Meetings 2022
+
+##### Slides: [bit.ly/3zvy8L6](https://bit.ly/3zvy8L6)
 ]
 
 ---
-
-
-
-
-
-
-
 
 # About Cornell College
 
 - Small liberal arts college of about 1000 students
 - One-Course-at-A-Time block schedule 
  - Each class occurs over 3.5 weeks including 18 days of 4 hours of instructional time and three weekends
-- New majors in Applied Statistics and Data Science
+- **New majors in Applied Statistics and Data Science**
+
+&lt;!-- --- --&gt;
+
+&lt;!-- # Course Objectives --&gt;
+&lt;!-- - From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control." --&gt;
+&lt;!-- - Data wrangling --&gt;
+&lt;!-- - Utilizing version control &amp; good organization to facilitate reproducible work --&gt;
+&lt;!-- - Building technical skills in R, and RStudio, namely *tidyverse* functions --&gt;
+&lt;!-- - Understanding and learning to consider ethical problems in data science --&gt;
+&lt;!-- - Creating understandable and honest data visualizations --&gt;
+&lt;!-- - Communicating statistical analysis --&gt;
 
 ---
 
-# Course Objectives
-- From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control."
-- Data wrangling
-- Utilizing version control &amp; good organization to facilitate reproducible work
-- Building technical skills in R, and RStudio, namely *tidyverse* functions
-- Understanding and learning to consider ethical problems in data science
-- Creating understandable and honest data visualizations
-- Communicating statistical analysis
-
----
 
 # Utilized Resources
 
@@ -93,115 +120,28 @@ class: center, middle, inverse, title-slide
  - Read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/)
  - Read ethics related materials
 
----
+&lt;!-- --- --&gt;
 
-# Course Schedule
-&lt;table class="table" style="font-size: 20px; margin-left: auto; margin-right: auto;border-bottom: 0;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; Day &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; Topics Covered &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 1 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Meeting R and GitHub (S1-S3,AE1a,L1) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 2 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Data Visualization (S3-S6,AE2,AE3) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 3 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Tidy  data and Data Wrangling (S7-S11,L2) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 4 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Data Types and Classes (S12,S13,AE5,L3) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 5 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Project Meetings &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 6 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Importing and Recording Data (S14,S15,AE6) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 7 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Effective Visualizations (S16,L4,AE7) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 8 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Statistical Confounding and Doing Data Science (S17-S19,L5) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 9 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Web Scraping, Functions, and Iteration (S20-S24,AE8,L8) &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tfoot&gt;
-&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;&lt;span style="font-style: italic;"&gt;Note: &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;
-&lt;sup&gt;&lt;/sup&gt; In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs&lt;/td&gt;&lt;/tr&gt;
-&lt;/tfoot&gt;
-&lt;/table&gt;
+&lt;!-- # Course Schedule --&gt;
+&lt;!-- ```{r schedule,echo=F} --&gt;
+&lt;!-- sch &lt;- read.csv('DSC_223_Course_Schedule.csv',header =F)  --&gt;
+&lt;!--   sch %&gt;% slice(1:9) %&gt;% --&gt;
+&lt;!--   kbl(col.names = c("Day","Topics Covered"))%&gt;% --&gt;
+&lt;!--   kable_styling(font_size = 20)%&gt;% --&gt;
+&lt;!--   footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs') --&gt;
 
----
+&lt;!-- ``` --&gt;
 
-# Course Schedule
-&lt;table class="table" style="font-size: 20px; margin-left: auto; margin-right: auto;border-bottom: 0;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; Day &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; Topics Covered &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 10 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Project Meetings and Midterm &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 11 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Data Ethics (S25-S27,Videos,L9) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 12 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Linear Modeling (S27,S28,L10) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 13 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Nonlinear Models and Multiple Regression (S29,S30,L11) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 14 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Prediction, Feature engineering, Cross Validation (S33-S35,L11) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 15 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Interactive Web Apps (S42-S45, RStudio Shiny Tutorial (RStudio 2021)) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 16 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Text Analysis (Modification of S40,S41 and tidytext workshop (Silge, 2021) &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 17 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Project Presentations &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Day 18 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; Final Exam &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tfoot&gt;
-&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;&lt;span style="font-style: italic;"&gt;Note: &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;
-&lt;sup&gt;&lt;/sup&gt; In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs&lt;/td&gt;&lt;/tr&gt;
-&lt;/tfoot&gt;
-&lt;/table&gt;
+&lt;!-- --- --&gt;
+
+&lt;!-- # Course Schedule --&gt;
+&lt;!-- ```{r schedule2,echo=F} --&gt;
+&lt;!--   sch %&gt;% slice(10:18) %&gt;% --&gt;
+&lt;!--   kbl(col.names = c("Day","Topics Covered"))%&gt;% --&gt;
+&lt;!--   kable_styling(font_size = 20)%&gt;% --&gt;
+&lt;!--   footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs') --&gt;
+
+&lt;!-- ``` --&gt;
 
 
 ---
@@ -253,8 +193,8 @@ to free up more space for application exercises."
 
 ---
 # Future Updates
-- Expanding the ethics discussion in the course
- - I will be working with a Cornell College faculty in Philosophy this summer.
+- Expanding the ethics integration in the course
+ - I am working with a Cornell College faculty, Dr. Megan Altman, to 
  - Using some modules from (Baumer, Garcia, Kim, et al., 2022)
 - Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick while giving useful feedback to students (Ricci, Medina, and Dogucu, 2022)
 - Less statistical inference and more data wrangling
@@ -367,7 +307,7 @@ https://juliasilge.github.io/tidytext-tutorial/site/.
 "ratio": "16:9",
 "highlightLines": true,
 "highlightStyle": "solarized-light",
-"countIncrementalSlides": false
+"countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
