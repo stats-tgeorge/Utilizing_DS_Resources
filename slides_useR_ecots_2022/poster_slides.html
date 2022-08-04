@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Utilizing Open Source Resources to Teach Introductory Data Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Tyler George" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../course-materials/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="../course-materials/setup.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Utilizing Open Source Resources to Teach Introductory Data Science
+]
+.subtitle[
+## useR! 2022
+]
+.author[
+### Dr. Tyler George
+]
+.institute[
+### Cornell College | Dept. of Mathematics and Statistics
+]
+.date[
+### June 22nd, 2022
+]
+
+---
+
+
+
+
+
+
+
+
+# About Cornell College
+
+- Small liberal arts college of about 1000 students
+- One-Course-at-A-Time block schedule 
+ - Each class occurs over 3.5 weeks including 18 days of 4 hours of instructional time and three weekends
+- New majors in Applied Statistics and Data Science
+
+---
+
+# Course Objectives
+- From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control."
+- Data wrangling
+- Utilizing version control &amp; good organization to facilitate reproducible work
+- Building technical skills in R, and RStudio, namely *tidyverse* functions
+- Understanding and learning to consider ethical problems in data science
+- Creating understandable and honest data visualizations
+- Communicating statistical analysis
+
+---
+
+# Utilized Resources
+
+- [Data Science in a Box](https://datasciencebox.org/index.html) by Mine Çetinkaya-Rundel (2021)
+- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College (Pattanayak, Gan, Li, Liang, and Wong, 2022)
+- Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
+- Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
+---
+
+# The Class
+.pull-left[
+- This course has a pre-requisite of *either* introductory statistics or introductory computer science (python) 
+- Total of 15 students
+]
+
+.pull-right[
+&lt;img src="img/Classroom_Layout.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# A Day in the Class
+- Each day consists of 2, 2 hour sessions.
+- Typical class flow:
+&lt;img src="img/DailyFlow.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
+
+- After the afternoon class each day students were assigned:
+ - One R homework, 
+ - Read 1-3 chapters of content from sources such as [R for Data Science](https://r4ds.had.co.nz/)
+ - Read ethics related materials
+
+---
+
+# Course Schedule
+&lt;table class="table" style="font-size: 20px; margin-left: auto; margin-right: auto;border-bottom: 0;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Day &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Topics Covered &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 1 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Meeting R and GitHub (S1-S3,AE1a,L1) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 2 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Data Visualization (S3-S6,AE2,AE3) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 3 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Tidy  data and Data Wrangling (S7-S11,L2) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 4 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Data Types and Classes (S12,S13,AE5,L3) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 5 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Project Meetings &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 6 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Importing and Recording Data (S14,S15,AE6) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 7 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Effective Visualizations (S16,L4,AE7) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 8 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Statistical Confounding and Doing Data Science (S17-S19,L5) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 9 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Web Scraping, Functions, and Iteration (S20-S24,AE8,L8) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;&lt;span style="font-style: italic;"&gt;Note: &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;
+&lt;sup&gt;&lt;/sup&gt; In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs&lt;/td&gt;&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+
+---
+
+# Course Schedule
+&lt;table class="table" style="font-size: 20px; margin-left: auto; margin-right: auto;border-bottom: 0;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Day &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Topics Covered &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 10 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Project Meetings and Midterm &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 11 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Data Ethics (S25-S27,Videos,L9) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 12 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Linear Modeling (S27,S28,L10) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 13 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Nonlinear Models and Multiple Regression (S29,S30,L11) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 14 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Prediction, Feature engineering, Cross Validation (S33-S35,L11) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 15 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Interactive Web Apps (S42-S45, RStudio Shiny Tutorial (RStudio 2021)) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 16 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Text Analysis (Modification of S40,S41 and tidytext workshop (Silge, 2021) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 17 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Project Presentations &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Day 18 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Final Exam &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;&lt;span style="font-style: italic;"&gt;Note: &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td style="padding: 0; " colspan="100%"&gt;
+&lt;sup&gt;&lt;/sup&gt; In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs&lt;/td&gt;&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+
+
+---
+
+# Technologies
+- Learning Management System (LMS) - Moodle
+- [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/) (new implementation for this course, see Çetinkaya-Rundel and Rundel (2018) for a discussion on infrastructure) 
+ - A combination of [RMarkdown](https://rmarkdown.rstudio.com/) and R scripts were used
+- Git and Github. 
+ - Students used Git through the RStudio panel within an R project
+ - I also used Github desktop application for some convenience such as pulling one students current work to help them
+- R packages - primarily within the *tidyverse* 
+ - [*ghclass*](https://rundel.github.io/ghclass/)  for distributing and collecting repositories (Rundel and Çetinkaya-Rundel, 2022).
+ 
+---
+
+# Teaching Pedagogies
+- Collaborative learning (Roseth, Garfield, and Ben-Zvi, 2008)
+&lt;img src="img/LabCycle.png" width="50%" style="display: block; margin: auto auto auto 0;" /&gt;
+*Note: This was deviated from for projects and examples to simulate merge conflicts*
+- Using tidyverse (Çetinkaya-Rundel, Hardin, Baumer, McNamara, Horton, and Rundel, 2021)
+- Version control to lead to reproducible work (Beckman, Çetinkaya-Rundel, Horton, Rundel, Sullivan, and Tackett, 2021)
+
+---
+
+# Learning the Bare Necessities
+- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions
+- What did I *need* to learn to teach this class?
+ - Git and Github: Basic Git functions such as push,pulling, and handling merge conflicts in RStudio
+ - *ghclass* R package made much of the Git/Github learning much smoother. See the R script I created [here](https://github.com/stats-tgeorge/Utilizing_DS_Resources/tree/main/course-materials/ghclass-scripts)
+ - RStudio server implementation and management required learning some basic Linux commands. See [here](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Cluster%20Info%20and%20Commands.docx) for the commands I ended up needing
+ - Learning the Xaringan R package to modify slides (now I'm using it for this!)
+  - I converted the notes to pdf's. See my simple script [here](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Notes/convertnotestopdf.R). I will host these using Github pages next time. 
+ 
+---
+
+# Student Comments
+- "I enjoy working with my group on the project, although it did take countless hours outside of the classroom I enjoyed it a lot and felt accomplished after presenting."
+
+-   "Working on labs and application exercises were beneficial for me. After completing those I could refer back to them which helped a lot. When working alone I often would get stuck on a exercise but when working in groups we were able to put our heads together and solve the problems. I really enjoyed that."
+
+- "There were far too many notes in this class."
+
+- "Going over the notes are necessary but I thought the length of the slides were way too long. It was hard to stay engaged the whole time when going
+over the notes because I was not using the code in r I was just seeing the results on the powerpoint. I think the notes could be trimmed down some
+to free up more space for application exercises."
+
+
+
+---
+# Future Updates
+- Expanding the ethics discussion in the course
+ - I will be working with a Cornell College faculty in Philosophy this summer.
+ - Using some modules from (Baumer, Garcia, Kim, Kinnaird, and Ott, 2022)
+- Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick while giving useful feedback to students (Ricci, Medina, and Dogucu, 2022)
+- Less statistical inference and more data wrangling
+- Higher project expectations
+- Github actions
+- Rethinking of exams. The estimated time required was way off. 
+
+---
+
+# Acknowledgments
+
+[Dr. Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
+
+---
+
+# References
+
+Baumer, B. S., R. L. Garcia, A. Y. Kim, et al. (2022).
+"Integrating Data Science Ethics Into an Undergraduate
+Major: A Case Study". In: _Journal of Statistics and Data
+Science Education_ 30.1, pp. 15-28. DOI:
+[10.1080/26939169.2022.2038041](https://doi.org/10.1080%2F26939169.2022.2038041).
+eprint:
+https://www.tandfonline.com/doi/pdf/10.1080/26939169.2022.2038041
+. URL: [
+https://www.tandfonline.com/doi/abs/10.1080/26939169.2022.2038041
+](
+https://www.tandfonline.com/doi/abs/10.1080/26939169.2022.2038041
+).
+
+Beckman, M. D., M. Çetinkaya-Rundel, N. J. Horton, et al.
+(2021). "Implementing Version Control with Git and GitHub
+as a Learning Objective in Statistics and Data Science
+Courses". In: _Journal of Statistics and Data Science
+Education_ 29.sup1, pp. S132-S144. DOI:
+[10.1080/10691898.2020.1848485](https://doi.org/10.1080%2F10691898.2020.1848485).
+eprint: https://doi.org/10.1080/10691898.2020.1848485 .
+URL: [ https://doi.org/10.1080/10691898.2020.1848485 ](
+https://doi.org/10.1080/10691898.2020.1848485 ).
+
+Çetinkaya-Rundel, M. (2021). _Data Science in a Box_.
+available at https://www.datasciencebox.org.
+
+---
+
+# References
+
+Çetinkaya-Rundel, M., J. Hardin, B. S. Baumer, et al.
+(2021). _An educator's perspective of the tidyverse_.
+DOI:
+[10.48550/ARXIV.2108.03510](https://doi.org/10.48550%2FARXIV.2108.03510).
+URL:
+[https://arxiv.org/abs/2108.03510](https://arxiv.org/abs/2108.03510).
+
+Çetinkaya-Rundel, M. and C. Rundel (2018).
+"Infrastructure and tools for teaching computing
+throughout the statistical curriculum". In: _The American
+Statistician_ 72.1, pp. 56-65. DOI:
+[10.1080/00031305.2017.1397549](https://doi.org/10.1080%2F00031305.2017.1397549).
+eprint:
+https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1397549.
+URL:
+[https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1397549](https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1397549).
+
+Pattanayak, C., D. Gan, T. Li, et al. (2022).
+_Quantitative Analysis Institute Online Resources_.
+Wellesley College.
+https://sites.google.com/wellesley.edu/qai-online-resources/home?authuser=0.
+
+---
+
+# References
+
+Ricci, F. Z., C. Medina, and M. Dogucu (2022).
+_gradetools: Tools to Assist with Providing Grades and
+Personalized Feedback to Students_.
+https://federicazoe.github.io/gradetools/,
+https://github.com/federicazoe/gradetools/.
+
+Roseth, C. J., J. B. Garfield, and D. Ben-Zvi (2008).
+"Collaboration in Learning and Teaching Statistics". In:
+_Journal of Statistics Education_ 16.1, p. null. DOI:
+[10.1080/10691898.2008.11889557](https://doi.org/10.1080%2F10691898.2008.11889557).
+eprint: https://doi.org/10.1080/10691898.2008.11889557 .
+URL:
+[https://doi.org/10.1080/10691898.2008.11889557](https://doi.org/10.1080/10691898.2008.11889557).
+
+RStudio (2020). _Learn Shiny_.
+https://shiny.rstudio.com/tutorial/.
+
+Rundel, C. and M. Çetinkaya-Rundel (2022). _ghclass:
+Tools for Managing Classes on GitHub_. R package version
+0.2.1, available at https://github.com/rundel/ghclass.
+
+---
+
+# References
+
+Silge, J. (2021). _Text Mining Workshop_. Available at
+https://juliasilge.github.io/tidytext-tutorial/site/.
+
+
+
+---
+# Thank You!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightLines": true,
+"highlightStyle": "solarized-light",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
