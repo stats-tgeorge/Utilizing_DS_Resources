@@ -1,9 +1,9 @@
 ---
 title: "Utilizing Open Source Resources to Teach Introductory Data Science"
-subtitle: "useR! 2022"
+subtitle: "JSM 2022"
 author: "Dr. Tyler George"
 institute: "Cornell College | Dept. of Mathematics and Statistics"
-date: "June 22nd, 2022"
+date: "Auguest 7th, 2022"
 output:
   xaringan::moon_reader:
     css: ["../course-materials/xaringan-themer.css","../course-materials/setup.css"]
