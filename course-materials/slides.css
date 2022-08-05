@@ -71,6 +71,7 @@
   text-align: center;
 }
 
+
 /* Margins around headers */
 /* To make the most of the slide real estate */
 
@@ -162,11 +163,12 @@ ul{
 
 /* Footer */
 div.my-footer {
-    border-top: 1px solid var(--gray);
+    /*border-top: 1px solid var(--gray);*/
     position: absolute;
     bottom: 0px;
     height: 40px;
     width: 90%;
+    color: white;
 }
 div.my-footer span {
     font-size: 20px;
