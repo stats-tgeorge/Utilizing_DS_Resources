@@ -54,7 +54,7 @@ tgeorge@cornellcollege.edu
  
 `r fontawesome::fa("github")` stats_tgeorge
  
-##### Slides: [bit.ly/3zvy8L6](https://bit.ly/3zvy8L6)
+##### Slides: [bit.ly/3ddpp8V](https://bit.ly/3ddpp8V)
 ]
 
 ---
@@ -65,78 +65,6 @@ tgeorge@cornellcollege.edu
 - One-Course-at-A-Time block schedule 
  - Each class occurs over 3.5 weeks including 18 days of 4 hours of instructional time and three weekends
 - **New majors in Applied Statistics and Data Science**
-
-<!-- --- -->
-
-<!-- # Course Objectives -->
-<!-- - From the syllabus "respect, explore, understand, and utilize data in a way that is reproducible using version control." -->
-<!-- - Data wrangling -->
-<!-- - Utilizing version control & good organization to facilitate reproducible work -->
-<!-- - Building technical skills in R, and RStudio, namely *tidyverse* functions -->
-<!-- - Understanding and learning to consider ethical problems in data science -->
-<!-- - Creating understandable and honest data visualizations -->
-<!-- - Communicating statistical analysis -->
-
-
----
-
-# A Day of Class
-.pull-left[
-- This course has a pre-requisite of *either* introductory statistics or computer science (python)
-- Each day consists of 2, 2 hour sessions
-
-Student homeworks:
- - R homework similar to labs
- - Readings related to ethics
- - Group project
-]
-
-.pull-right[
-```{r echo=FALSE, out.width="120%", fig.align="right"}
-knitr::include_graphics("img/DailyFlow.png")
-```
-
-```{r echo=FALSE, out.width="55%", fig.align="left"}
-knitr::include_graphics("img/Classroom_Layout.png")
-```
-]
-
-
-<!-- --- -->
-
-<!-- # Course Schedule -->
-<!-- ```{r schedule,echo=F} -->
-<!-- sch <- read.csv('DSC_223_Course_Schedule.csv',header =F)  -->
-<!--   sch %>% slice(1:9) %>% -->
-<!--   kbl(col.names = c("Day","Topics Covered"))%>% -->
-<!--   kable_styling(font_size = 20)%>% -->
-<!--   footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs') -->
-
-<!-- ``` -->
-
-<!-- --- -->
-
-<!-- # Course Schedule -->
-<!-- ```{r schedule2,echo=F} -->
-<!--   sch %>% slice(10:18) %>% -->
-<!--   kbl(col.names = c("Day","Topics Covered"))%>% -->
-<!--   kable_styling(font_size = 20)%>% -->
-<!--   footnote('In reference to Data Science in a Box with S = Slides, AE = Application Exercises, L = Labs') -->
-
-<!-- ``` -->
-
-
-<!-- --- -->
-
-<!-- # Technologies -->
-<!-- - Learning Management System (LMS) - Moodle -->
-<!-- - [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/) (new implementation for this course, see `r Citet(Bib,"Cetinkaya-Rundel2018")` for a discussion on infrastructure)  -->
-<!--  - A combination of [RMarkdown](https://rmarkdown.rstudio.com/) and R scripts were used -->
-<!-- - Git and Github.  -->
-<!--  - Students used Git through the RStudio panel within an R project -->
-<!--  - I also used Github desktop application for some convenience such as pulling one students current work to help them -->
-<!-- - R packages - primarily within the *tidyverse*  -->
-<!--  - [*ghclass*](https://rundel.github.io/ghclass/)  for distributing and collecting repositories `r Cite(Bib,"Rundel")`. -->
 
 ---
 
@@ -163,43 +91,28 @@ knitr::include_graphics("img/LabCycle.png")
 
 ---
 
-# Learning the Bare Necessities
-- I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions
-- What did I *need* to learn to teach this class in this way?
- - Git and Github: Basic Git functions such as push,pulling, and handling git merge conflicts in RStudio
- - *ghclass* R package made using Git/Github for distributing content much smoother. See the [R script I created](https://github.com/stats-tgeorge/Utilizing_DS_Resources/tree/main/course-materials/ghclass-scripts)
+## Learning the Bare Necessities
+I was new to Git, Github, RStudio Server (Linux), and a handful of the tidyverse packages and functions. 
+
+- What did I **need** to learn to teach this class in this way?
+ - Basic Git functions such as push,pulling, and handling git merge conflicts in RStudio
+ - *ghclass* R package made using Git/Github for running the class. See the [R script I created](https://github.com/stats-tgeorge/Utilizing_DS_Resources/tree/main/course-materials/ghclass-scripts)
+- What are some extra things I learned? 
+ - RStudio server implementation and management in Ubuntu (Linux) [Use Examples](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Cluster%20Info%20and%20Commands.docx) 
+ - Learning the Xaringan R package to modify slides
+
 
 All course materials can be found at [bit.ly/3Qq99Qb](https://bit.ly/3Qq99Qb)
 
----
-
-# Learning more than needed
- - RStudio server implementation and management required learning some basic Linux commands. See the [short list of commands I ended up needing](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Cluster%20Info%20and%20Commands.docx) 
- - Learning the Xaringan R package to modify slides (now I'm using it for this!)
-  - I converted the notes to pdf's using *xaringanBuilder* package. See my [short script](https://github.com/stats-tgeorge/Utilizing_DS_Resources/blob/main/course-materials/Notes/convertnotestopdf.R). *I will host these using Github pages next time.* 
-
-All course materials can be found at [bit.ly/3Qq99Qb](https://bit.ly/3Qq99Qb)
-
----
-
-# Student Comments
-- "I enjoy working with my group on the project, although it did take countless hours outside of the classroom I enjoyed it a lot and felt accomplished after presenting."
-
--   "Working on labs and application exercises were beneficial for me. After completing those I could refer back to them which helped a lot. When working alone I often would get stuck on a exercise but when working in groups we were able to put our heads together and solve the problems. I really enjoyed that."
-
-- "There were far too many notes in this class."
 
 ---
 
 # Future Updates
 - Expanding the ethics integration in the course
- - Collaboration with Dr. Megan Altman, to integrate CARVE(R) principals into the data science discussions
- - [integrated ethics LABS](https://integratedethicslabs.org/labs-overview/)
- - Data science ethics modules from `r Citep(Bib,"Beckman2022")`
-- Trying out the new [gradetools](https://github.com/federicazoe/gradetools) R package to make grading quicker while giving useful feedback to students `r Cite(Bib,"Federica")`
+- Trying out the new [gradetools](https://github.com/federicazoe/gradetools) R package
 - Less statistical inference and more data wrangling
-- Higher project and assessment expectations. The estimated time required was way off.
-- Github actions to help students know if they submitted something that others can compile (reproducible)
+- Higher project and assessment expectations.
+- Github actions
 - Quarto
 
 ---

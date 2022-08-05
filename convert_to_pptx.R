@@ -5,10 +5,10 @@
 #pagedown::chrome_print("slides\\poster_slides.html", output = "poster_slides.pdf")
 # First manually save using google chrome
 setwd("slides_jsm_2022")
-pages <- pdftools::pdf_info("poster_slides.pdf")$pages
-filenames <- sprintf("poster_slides/slides_%02d.png", 1:pages)
-#dir.create("poster_slides")
-pdftools::pdf_convert("poster_slides.pdf", dpi=300,
+pages <- pdftools::pdf_info("speed_slides.pdf")$pages
+filenames <- sprintf("speed_slides/slides_%02d.png", 1:pages)
+#dir.create("speed_slides")
+pdftools::pdf_convert("speed_slides.pdf", dpi=300,
                       filenames = filenames)
 
 slide_images <- glue::glue(
@@ -32,6 +32,6 @@ md <- glue::glue(
   "
 )
 
-cat(md, file = "slides_powerpoint.Rmd")
+cat(md, file = "speed_slides_powerpoint.Rmd")
 
-rmarkdown::render("slides_powerpoint.Rmd")  ## powerpoint!
+rmarkdown::render("speed_slides_powerpoint.Rmd")  ## powerpoint!
