@@ -1,15 +1,15 @@
-# This is to converty my xaringan html to powerpoint
+# This is to convert my xaringan html to powerpoint
 # Code credit: gadenbuie 
 # https://github.com/gadenbuie/xaringan2powerpoint
 
 #pagedown::chrome_print("slides\\poster_slides.html", output = "poster_slides.pdf")
 # First manually save using google chrome
-
-pages <- pdftools::pdf_info("slides/poster_slides.pdf")$pages
+setwd("slides_jsm_2022")
+pages <- pdftools::pdf_info("poster_slides.pdf")$pages
 filenames <- sprintf("poster_slides/slides_%02d.png", 1:pages)
-#dir.create("slides/poster_slides")
-pdftools::pdf_convert("slides/poster_slides.pdf", dpi=300,
-                      filenames = paste0("slides/",filenames))
+#dir.create("poster_slides")
+pdftools::pdf_convert("poster_slides.pdf", dpi=300,
+                      filenames = filenames)
 
 slide_images <- glue::glue(
   "
@@ -32,6 +32,6 @@ md <- glue::glue(
   "
 )
 
-cat(md, file = "slides/slides_powerpoint.Rmd")
+cat(md, file = "slides_powerpoint.Rmd")
 
-rmarkdown::render("slides/slides_powerpoint.Rmd")  ## powerpoint!
+rmarkdown::render("slides_powerpoint.Rmd")  ## powerpoint!

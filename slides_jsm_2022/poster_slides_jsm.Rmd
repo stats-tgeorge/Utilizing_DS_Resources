@@ -77,18 +77,10 @@ tgeorge@cornellcollege.edu
 <!-- - Creating understandable and honest data visualizations -->
 <!-- - Communicating statistical analysis -->
 
----
-
-# Utilized Resources
-
-- [Data Science in a Box](https://datasciencebox.org/index.html) by Mine `r Citet(Bib,"Cetinkaya-Rundel")`
-- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College `r Cite(Bib,"Pattanayak")`
-- Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
-- Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
 
 ---
 
-# A Day in the Class
+# A Day of Class
 .pull-left[
 - This course has a pre-requisite of *either* introductory statistics or computer science (python)
 - Each day consists of 2, 2 hour sessions
@@ -145,7 +137,16 @@ knitr::include_graphics("img/Classroom_Layout.png")
 <!--  - I also used Github desktop application for some convenience such as pulling one students current work to help them -->
 <!-- - R packages - primarily within the *tidyverse*  -->
 <!--  - [*ghclass*](https://rundel.github.io/ghclass/)  for distributing and collecting repositories `r Cite(Bib,"Rundel")`. -->
- 
+
+---
+
+# Utilized Resources
+
+- [Data Science in a Box](https://datasciencebox.org/index.html) by Mine `r Citet(Bib,"Cetinkaya-Rundel")`
+- Data science ethics assignments from the [Quantitative Analysis Institute](https://sites.google.com/wellesley.edu/qai-online-resources/home) at Wellesley College `r Cite(Bib,"Pattanayak")`
+- Workshops by Julia Silge available at [https://juliasilge.github.io/tidytext-tutorial/site/](https://juliasilge.github.io/tidytext-tutorial/site/)
+- Many R packages were use throughout the class but [ghclass](https://rundel.github.io/ghclass/) was particularly useful for teaching/running the course
+
 ---
 
 # Teaching Pedagogies
@@ -188,35 +189,29 @@ All course materials can be found at [bit.ly/3Qq99Qb](https://bit.ly/3Qq99Qb)
 
 - "There were far too many notes in this class."
 
-- "Going over the notes are necessary but I thought the length of the slides were way too long. It was hard to stay engaged the whole time when going
-over the notes because I was not using the code in r I was just seeing the results on the powerpoint. I think the notes could be trimmed down some
-to free up more space for application exercises."
-
-
-
 ---
 
 # Future Updates
 - Expanding the ethics integration in the course
- - I am working with a Cornell College faculty, Dr. Megan Altman, to integrate CARVE(R) principals into the data science discussions
+ - Collaboration with Dr. Megan Altman, to integrate CARVE(R) principals into the data science discussions
  - [integrated ethics LABS](https://integratedethicslabs.org/labs-overview/)
- - Using some modules from `r Citep(Bib,"Beckman2022")`
-- Trying out [gradetools](https://github.com/federicazoe/gradetools) to make grading quick while giving useful feedback to students `r Cite(Bib,"Federica")`
+ - Data science ethics modules from `r Citep(Bib,"Beckman2022")`
+- Trying out the new [gradetools](https://github.com/federicazoe/gradetools) R package to make grading quicker while giving useful feedback to students `r Cite(Bib,"Federica")`
 - Less statistical inference and more data wrangling
-- Higher project expectations
+- Higher project and assessment expectations. The estimated time required was way off.
 - Github actions to help students know if they submitted something that others can compile (reproducible)
-- Rethinking of exams. The estimated time required was way off.
 - Quarto
 
 ---
 
-# Acknowledgments
+### References
+See the bibliography at [bit.ly/3bCuh6L](https://bit.ly/3bCuh6L)
 
-[Dr. Ajit Chavan](https://www.cornellcollege.edu/computer-science/faculty/index.shtml), Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
 
-# References
-The list was too long to list here - see ____. 
+### Acknowledgment
 
-## Questions? 
+Dr. Ajit Chavan, Assistant Professor of Computer Science at Cornell College, for setting up the cluster used to run the RStudio Server and answering many of my questions about its use. 
 
-## Thank You!
+### Questions? 
+
+#### Thank You!
