@@ -3,7 +3,7 @@
 ### Virtual Poster Presented at *useR! 2022* and *eCOTS 2022* 
 
 #### Click [HERE](https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides_jsm_2022/poster_slides_jsm.html#1) for the Joint Statistical Meetings (JSM) 2022 speed talk and poster slides
-#### Click [HERE](https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides/poster_slides.html) for useR! and eCOTS 2022 poster/slides
+#### Click [HERE](https://stats-tgeorge.github.io/Utilizing_DS_Resources/slides_useR_ecots_2022/poster_slides.html) for useR! and eCOTS 2022 poster/slides
 #### Click [HERE](https://www.causeweb.org/cause/ecots/ecots22/program/posters/th-02) for a recorded elevator pitch for eCOTS 2022. 
 #### Author: Dr. Tyler George
 
